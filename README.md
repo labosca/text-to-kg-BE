@@ -65,8 +65,12 @@ The repository currently contains the input files and output results related to 
 
 ## Setup and Usage
 
+To test this pipeline on your input documents:
+
 1. Place your input text in `input/input.txt`
-2. Run one of the text-to-KG scripts:
+2. Prepare a ground truth in TTL syntax of your input text in `input/ground1.ttl`
+3. Adapt the example to your use case, providing the ontology concepts required in `input/example.txt`
+4. Run one of the text-to-KG scripts:
    ```bash
    python "python scripts llama/llama-text-to-KG-full-text.py"
    # or
@@ -74,7 +78,7 @@ The repository currently contains the input files and output results related to 
    # or
    python "python scripts llama/llama-text-to-KG-sentence.py"
    ```
-3. Run the error analysis scripts in sequence:
+5. Run the error analysis scripts in sequence:
    ```bash
    cd "python scripts llama/error analysis"
    python 01_ttl-json-df.py
