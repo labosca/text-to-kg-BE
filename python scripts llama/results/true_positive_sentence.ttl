@@ -1,0 +1,101 @@
+@prefix ns1: <https://w3id.org/rec/full/> .
+@prefix ns2: <http://www.example.org/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.example.org/resource/AtticStorage> a ns1:Storage ;
+    ns2:currentCapacity "300m2" .
+
+<http://www.example.org/resource/BasementFloor> a ns1:Level ;
+    ns1:hasPart ns1:Storage .
+
+<http://www.example.org/resource/CesareLombrosoAnatomyTheater> rdfs:label "039_A_P00_1290" .
+
+<http://www.example.org/resource/Curator> a ns1:Person ;
+    ns1:isMemberOf <http://www.example.org/resource/MunicipalityOfTurin> .
+
+<http://www.example.org/resource/DigitizationAndPhotographyLaboratory> ns2:currentCapacity "60m2" ;
+    ns2:requiredCapacity "75m2" ;
+    ns1:isPartOf <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/Employee1> a ns1:Person .
+
+<http://www.example.org/resource/Employee2> a ns1:Person .
+
+<http://www.example.org/resource/Employee3> a ns1:Person .
+
+<http://www.example.org/resource/Employee4> a ns1:Person .
+
+<http://www.example.org/resource/Employee5> a ns1:Person .
+
+<http://www.example.org/resource/Employee6> a ns1:Person .
+
+<http://www.example.org/resource/Employee7> a ns1:Person .
+
+<http://www.example.org/resource/GroundFloor> a ns1:Level ;
+    rdfs:label "039_A_P00" ;
+    ns1:hasPart <http://www.example.org/resource/EducationalLaboratory>,
+        <http://www.example.org/resource/StaffDressingRoom>,
+        <http://www.example.org/resource/StaffRestingRoom>,
+        <http://www.example.org/resource/TemporaryExhibitionArea>,
+        <http://www.example.org/resource/TicketOffice> .
+
+<http://www.example.org/resource/Intern1> a ns1:Person .
+
+<http://www.example.org/resource/Intern2> a ns1:Person .
+
+<http://www.example.org/resource/MezzanineFloor> a ns1:Level ;
+    rdfs:label "039_A_P00mezzanine" ;
+    ns1:hasPart <http://www.example.org/resource/MicroscopesClassroom> .
+
+<http://www.example.org/resource/PalaceOfAnatomicalInstitutes> a ns1:Building,
+        ns1:RealEstateComponent ;
+    ns1:address <http://www.example.org/resource/CorsoMassimoDAzeglio>,
+        <http://www.example.org/resource/ViaGaetanoDonizetti>,
+        <http://www.example.org/resource/ViaMichelangeloBuonarroti>,
+        <http://www.example.org/resource/ViaPietroGiuria> .
+
+<http://www.example.org/resource/PaperMaterialRestorationLaboratory> ns2:currentCapacity "20m2" ;
+    ns2:requiredCapacity "40m2" ;
+    ns1:isPartOf <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/PhDStudent1> a ns1:Person .
+
+<http://www.example.org/resource/PhDStudent2> a ns1:Person .
+
+<http://www.example.org/resource/Researcher1> a ns1:Person .
+
+<http://www.example.org/resource/SecondFloor> a ns1:Level ;
+    ns1:hasPart ns1:Storage .
+
+<http://www.example.org/resource/UniversityOfTurin> a ns1:Organization .
+
+<http://www.example.org/resource/Volunteer1> a ns1:Person .
+
+<http://www.example.org/resource/Volunteer2> a ns1:Person .
+
+<http://www.example.org/resource/FederatedLibraryOfMedicine> a ns1:Library ;
+    ns1:isPartOf <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/MicroscopesClassroom> rdfs:label "039_A_P00_1294" .
+
+<http://www.example.org/resource/MunicipalityOfTurin> a ns1:Organization .
+
+<http://www.example.org/resource/StaffDressingRoom> ns2:currentCapacity "20m2" ;
+    ns2:requiredCapacity "30m2" .
+
+<http://www.example.org/resource/StaffRestingRoom> ns2:currentCapacity "10m2" .
+
+<http://www.example.org/resource/TicketOffice> ns2:requiredCapacity "40m2" .
+
+<http://www.example.org/resource/FirstFloor> a ns1:Level ;
+    rdfs:label "039_A_P01" ;
+    ns1:hasPart <http://www.example.org/resource/039_A_P01_2190>,
+        <http://www.example.org/resource/039_A_P01_2195>,
+        <http://www.example.org/resource/039_A_P01_2245>,
+        <http://www.example.org/resource/039_A_P01_2430>,
+        <http://www.example.org/resource/039_A_P01_2830>,
+        <http://www.example.org/resource/039_A_P01_2910>,
+        <http://www.example.org/resource/039_A_P01_2980>,
+        <http://www.example.org/resource/039_A_P01_3010>,
+        <http://www.example.org/resource/FederatedLibraryOfMedicine> .
+

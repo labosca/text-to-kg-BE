@@ -1,0 +1,53 @@
+@prefix ns1: <http://www.example.org/ontology/> .
+@prefix ns2: <https://w3id.org/rec/full/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.example.org/resource/Curator> ns2:isEmployedBy <http://www.example.org/resource/MunicipalityOfTurin> .
+
+<http://www.example.org/resource/DigitizationAndPhotographyLaboratory> a ns1:DigitizationAndPhotographyLaboratory .
+
+<http://www.example.org/resource/EducationalLaboratory> a ns1:EducationalLaboratory ;
+    ns2:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/FederatedLibraryOfMedicine> a ns1:FederatedLibraryOfMedicine ;
+    ns1:currentCapacity "5667 books" .
+
+<http://www.example.org/resource/GreatHallFormerForensicMedicine> a ns1:GreatHallFormerForensicMedicine ;
+    ns1:isCurrentlyUnserviceable "true" ;
+    ns2:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/HistoricalArchive> a ns1:HistoricalArchive ;
+    ns1:currentCapacity "130m2" ;
+    ns1:requiredCapacity "160m2" .
+
+<http://www.example.org/resource/OfficesForTechnicalAdministrativeAndResearchStaff> a ns1:OfficesForTechnicalAdministrativeAndResearchStaff ;
+    ns1:hosts "15 users" .
+
+<http://www.example.org/resource/PalaceOfAnatomicalInstitutes> rdfs:label "039_A" .
+
+<http://www.example.org/resource/PaperMaterialRestorationLaboratory> a ns1:PaperMaterialRestorationLaboratory .
+
+<http://www.example.org/resource/SecondFloor> ns2:hasPart <http://www.example.org/resource/AtticStorage> .
+
+<http://www.example.org/resource/StaffDressingRoom> a ns1:StaffDressingRoom ;
+    ns2:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/StaffRestingRoom> a ns1:StaffRestingRoom ;
+    ns2:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/TemporaryExhibitionArea> a ns1:TemporaryExhibitionArea ;
+    ns2:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/TicketOffice> a ns1:TicketOffice ;
+    ns1:currentCapacity "40m2" ;
+    ns2:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/AtticStorage> a ns1:AtticStorage .
+
+<http://www.example.org/resource/BasementFloor> ns2:hasPart <http://www.example.org/resource/TechnicalRoomsForSepticRoom> .
+
+<http://www.example.org/resource/TechnicalRoomsForSepticRoom> a ns1:TechnicalRoomsForSepticRoom ;
+    ns1:currentCapacity "235m2" ;
+    ns1:requiredCapacity "300m2" ;
+    ns2:isPartOf <http://www.example.org/resource/BasementFloor> .
+

@@ -1,0 +1,9 @@
+transformers>=4.35.0
+torch>=2.1.0
+bitsandbytes>=0.39.0
+rdflib>=6.4.0
+huggingface-hub>=0.18.0
+tqdm>=4.65.0
+safetensors>=0.3.0
+accelerate>=0.18.0
+numpy>=1.25.0

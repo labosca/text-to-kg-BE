@@ -1,0 +1,419 @@
+@prefix ns1: <http://www.example.org/ontology/> .
+@prefix ns2: <https://w3id.org/rec/full/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.example.org/resource/002_A_P01_2190> a ns1:Museum ;
+    ns1:isOccupiedBy <http://www.example.org/resource/MuseumOfCriminalAnthropology> ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_2195> a ns1:Museum ;
+    ns1:isOccupiedBy <http://www.example.org/resource/MuseumOfCriminalAnthropology> ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_2245> a ns1:Museum ;
+    ns1:isOccupiedBy <http://www.example.org/resource/MuseumOfCriminalAnthropology> ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_2430> a ns1:Museum ;
+    ns1:isOccupiedBy <http://www.example.org/resource/MuseumOfCriminalAnthropology> ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_2830> a ns1:Museum ;
+    ns1:isOccupiedBy <http://www.example.org/resource/MuseumOfHumanAnatomy> ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_2910> a ns1:Museum ;
+    ns1:isOccupiedBy <http://www.example.org/resource/MuseumOfHumanAnatomy> ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_2980> a ns1:Museum ;
+    ns1:isOccupiedBy <http://www.example.org/resource/MuseumOfHumanAnatomy> ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_3010> a ns1:Museum ;
+    ns1:isOccupiedBy <http://www.example.org/resource/MuseumOfHumanAnatomy> ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/AirConditionedRoom> a ns1:Room ;
+    rdfs:label "Air-conditioned room" ;
+    ns1:hasCapacity "30" ;
+    ns1:isPartOf <http://www.example.org/resource/StorageFirstFloor> .
+
+<http://www.example.org/resource/AtticStorage> a ns1:Storage ;
+    rdfs:label "Attic storage" ;
+    ns1:hasCapacity "300" ;
+    ns1:hasContent ns1:AnatomicalCollections,
+        ns1:Casts,
+        ns1:Packaging ;
+    ns1:isLocatedOn <http://www.example.org/resource/SecondFloor> .
+
+<http://www.example.org/resource/BergaminiStorageCabinet> a ns1:StorageCabinet ;
+    rdfs:label "Bergamini storage cabinet" ;
+    ns1:hasCapacity "113" ;
+    ns1:hasContent ns1:NeuroscienceBooks .
+
+<http://www.example.org/resource/Bookshop> a ns1:PublicSpace ;
+    ns2:isPartOf <http://www.example.org/resource/TicketOffice> .
+
+<http://www.example.org/resource/CleanArtifactsStorageRoom> a ns1:Room ;
+    rdfs:label "Clean artifacts storage room" ;
+    ns1:hasCapacity "100" ;
+    ns1:isPartOf <http://www.example.org/resource/StorageFirstFloor> .
+
+<http://www.example.org/resource/Curator> ns1:employmentStatus "full-time" .
+
+<http://www.example.org/resource/DigitizationAndPhotographyLaboratory> a ns2:Room ;
+    rdfs:label "DigitizationAndPhotographyLaboratory" ;
+    ns2:isLocatedOn <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/DirtyMaterialsStorageRoom> a ns1:Room ;
+    rdfs:label "Dirty materials storage room" ;
+    ns1:hasCapacity "100" ;
+    ns1:isPartOf <http://www.example.org/resource/StorageFirstFloor> .
+
+<http://www.example.org/resource/FloorArea> a ns1:FloorArea ;
+    ns1:hasValue "1645.78m2" ;
+    ns1:isLocatedIn <http://www.example.org/resource/039_A_P01> .
+
+<http://www.example.org/resource/HistoricalArchive> a ns2:Room ;
+    rdfs:label "HistoricalArchive" ;
+    ns1:hasEquipment "1 drawer unit with 10 drawers (1m wide X 80 cm deep)",
+        "1 drawer unit with 14 drawers (1,40 m wide X 1 m deep)",
+        "4 consultation desks" ;
+    ns2:isLocatedOn <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/HumanEvolutionCollections> a ns1:Room ;
+    rdfs:label "Human evolution collections" ;
+    ns1:hasCapacity "100" ;
+    ns1:isPartOf <http://www.example.org/resource/StorageFirstFloor> .
+
+<http://www.example.org/resource/LombrosoOffice> a ns1:Office ;
+    rdfs:label "Lombroso Office" ;
+    ns1:hasCapacity "205" ;
+    ns1:hasContent ns1:ForensicsMedicineBooks .
+
+<http://www.example.org/resource/MiscellaneousMaterials> a ns1:Room ;
+    rdfs:label "Miscellaneous materials" ;
+    ns1:hasCapacity "100" ;
+    ns1:isPartOf <http://www.example.org/resource/StorageFirstFloor> .
+
+<http://www.example.org/resource/MuseumOfAnthropologyAndEthnography> a ns2:Museum ;
+    rdfs:label "Museum of Anthropology and Ethnography" .
+
+<http://www.example.org/resource/MuseumOfFruits> a ns2:Museum ;
+    rdfs:label "Museum of Fruits" .
+
+<http://www.example.org/resource/MuseumOfMan> a ns2:Museum ;
+    rdfs:label "Museum of Man" .
+
+<http://www.example.org/resource/OsteologicalCollections> a ns1:Room ;
+    rdfs:label "Osteological collections" ;
+    ns1:hasCapacity "270" ;
+    ns1:isPartOf <http://www.example.org/resource/StorageFirstFloor> .
+
+<http://www.example.org/resource/PalaceOfAnatomicalInstitutes> rdfs:label "039_A" .
+
+<http://www.example.org/resource/PalazzoDegliStemmi> a ns2:Building,
+        ns2:RealEstateComponent ;
+    rdfs:label "002_A" ;
+    ns2:address <http://www.example.org/resource/ViaPo29> ;
+    ns2:hasPart <http://www.example.org/resource/002_A_P00>,
+        <http://www.example.org/resource/002_A_P01>,
+        <http://www.example.org/resource/BasementFloor>,
+        <http://www.example.org/resource/FirstFloor>,
+        <http://www.example.org/resource/GroundFloor>,
+        <http://www.example.org/resource/SecondFloor>,
+        <http://www.example.org/resource/ThirdFloor> ;
+    ns2:isLocationOf <http://www.example.org/resource/Directorate> ;
+    ns2:ownedBy <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/PaperMaterialRestorationLaboratory> a ns2:Room ;
+    rdfs:label "PaperMaterialRestorationLaboratory" ;
+    ns2:isLocatedOn <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/Room01> a ns1:Room ;
+    rdfs:label "Room 01" ;
+    ns1:hasCapacity "202",
+        "375" ;
+    ns1:hasContent ns1:CarraraDonation,
+        ns1:FerreroDonation,
+        ns1:MiscellaneousAnatomicalBooks .
+
+<http://www.example.org/resource/Room02> a ns1:Room ;
+    rdfs:label "Room 02" ;
+    ns1:hasCapacity "4403" ;
+    ns1:hasContent ns1:FrigessiDonation .
+
+<http://www.example.org/resource/Room03> a ns1:Room ;
+    rdfs:label "Room 03" ;
+    ns1:hasCapacity "369" ;
+    ns1:hasContent ns1:BabiniDonation ;
+    ns1:isPartOf <http://www.example.org/resource/AnthropologyInstitute> .
+
+<http://www.example.org/resource/SistemaMusealeDiAteneo> a ns2:Organization ;
+    rdfs:label "Sistema Museale di Ateneo" .
+
+<http://www.example.org/resource/StaffDressingRoom> a ns1:PublicSpace ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P00> .
+
+<http://www.example.org/resource/StaffRestingRoom> a ns1:PublicSpace ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P00> .
+
+<http://www.example.org/resource/TechnicalRooms> a ns1:Storage ;
+    rdfs:label "Technical rooms" ;
+    ns1:hasCapacity "235" ;
+    ns1:isLocatedOn <http://www.example.org/resource/Basement> ;
+    ns1:isRequiredCapacity "300" .
+
+<http://www.example.org/resource/TemporaryExhibitionArea> a ns1:PublicSpace ;
+    ns1:currentCapacity "40m2" ;
+    ns1:requiredCapacity "40m2" ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P00> .
+
+<http://www.example.org/resource/UniversityOfTurin> rdfs:label "University of Turin" ;
+    ns2:hasEmployee <http://www.example.org/resource/Employee1>,
+        <http://www.example.org/resource/Employee2>,
+        <http://www.example.org/resource/Employee3>,
+        <http://www.example.org/resource/Employee4>,
+        <http://www.example.org/resource/Employee5>,
+        <http://www.example.org/resource/Employee6>,
+        <http://www.example.org/resource/Employee7> ;
+    ns2:hasIntern <http://www.example.org/resource/Intern1>,
+        <http://www.example.org/resource/Intern2> ;
+    ns2:hasPhDStudent <http://www.example.org/resource/PhDStudent1>,
+        <http://www.example.org/resource/PhDStudent2> ;
+    ns2:hasResearcher <http://www.example.org/resource/Researcher1> ;
+    ns2:hasVolunteer <http://www.example.org/resource/Volunteer1>,
+        <http://www.example.org/resource/Volunteer2> .
+
+<http://www.example.org/resource/002_A_P00_0790> a ns2:Office ;
+    ns1:currentCapacity "39m2" ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P00> .
+
+<http://www.example.org/resource/002_A_P00_0820> a ns1:Closet ;
+    ns1:currentCapacity "3m2" ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P00> .
+
+<http://www.example.org/resource/002_A_P00_0861> a ns1:Infopoint ;
+    ns1:currentCapacity "13m2" ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P00> .
+
+<http://www.example.org/resource/002_A_P00_0870> a ns2:Reception ;
+    ns1:currentCapacity "39m2" ;
+    ns1:isAssignedTo <http://www.example.org/resource/SpaziComuni> ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P00> .
+
+<http://www.example.org/resource/002_A_P01_1280> a ns2:Office ;
+    ns1:currentCapacity "31m2" ;
+    ns1:isAssignedTo <http://www.example.org/resource/DirezionePersonale> ;
+    ns2:isLocationOf <http://www.example.org/resource/Employee> ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_1540> a ns2:Office ;
+    ns1:currentCapacity "14m2" ;
+    ns1:isAssignedTo <http://www.example.org/resource/DirezioneSicurezzaLogisticaEManutenzione> ;
+    ns1:requiredCapacity "20m2" ;
+    ns2:isLocationOf <http://www.example.org/resource/Researcher1>,
+        <http://www.example.org/resource/Researcher2> ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_S01_0010> a ns2:Storeroom ;
+    ns1:currentCapacity "51m2" ;
+    ns1:isAssignedTo <http://www.example.org/resource/DirezioneGenerale> ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_S01> .
+
+<http://www.example.org/resource/002_A_S01_0110> a ns2:Serveroom ;
+    ns1:currentCapacity "53m2" ;
+    ns1:isAssignedTo <http://www.example.org/resource/DirezioneSistemiInformativiPortaleElearning> ;
+    ns1:requiredCapacity "65m2" ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_S01> .
+
+<http://www.example.org/resource/039_A_P00_1290> a ns2:Room ;
+    ns1:isLocationOf <http://www.example.org/resource/MicroscopesClassroom> ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_P00> .
+
+<http://www.example.org/resource/039_A_P00_1294> a ns1:MicroscopesClassroom ;
+    ns1:isAccessibleFrom <http://www.example.org/resource/MainStaircase> ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_P00> .
+
+<http://www.example.org/resource/039_A_P00mezzanine> a ns2:Level ;
+    rdfs:label "039_A_P00mezzanine" ;
+    ns2:hasPart <http://www.example.org/resource/MicroscopesClassroom> .
+
+<http://www.example.org/resource/039_A_P01_1234> a ns1:Auditorium ;
+    ns1:isLocatedIn <http://www.example.org/resource/GreatHallOfAnatomy> ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_P01> .
+
+<http://www.example.org/resource/BasementFloor> rdfs:label "002_A_S01" ;
+    ns2:hasPart <http://www.example.org/resource/002_A_S01_0010>,
+        <http://www.example.org/resource/002_A_S01_0110> .
+
+<http://www.example.org/resource/DepartmentOffice1> a ns1:Office ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_P01> .
+
+<http://www.example.org/resource/DepartmentOffice2> a ns1:Office ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_P01> .
+
+<http://www.example.org/resource/DirezioneGenerale> a ns2:Group ;
+    rdfs:label "DA.POLO.P08.01" .
+
+<http://www.example.org/resource/DirezionePersonale> a ns2:Group ;
+    rdfs:label "DA.POLO.P08.10" .
+
+<http://www.example.org/resource/DirezioneSicurezzaLogisticaEManutenzione> a ns2:Group ;
+    rdfs:label "DA.POLO.P08.06" .
+
+<http://www.example.org/resource/DirezioneSistemiInformativiPortaleElearning> a ns2:Group ;
+    rdfs:label "DA.POLO.P08.09" .
+
+<http://www.example.org/resource/Employee1> ns1:employmentStatus "full-time" ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Employee2> ns1:employmentStatus "full-time" .
+
+<http://www.example.org/resource/Employee3> ns1:employmentStatus "full-time" .
+
+<http://www.example.org/resource/Employee4> ns1:employmentStatus "full-time" .
+
+<http://www.example.org/resource/Employee5> ns1:employmentStatus "full-time" .
+
+<http://www.example.org/resource/Employee6> ns1:employmentStatus "full-time" .
+
+<http://www.example.org/resource/Employee7> ns1:employmentStatus "full-time" .
+
+<http://www.example.org/resource/FederatedLibraryOfMedicine> a ns1:Library,
+        ns2:Room ;
+    rdfs:label "FederatedLibraryOfMedicine" ;
+    ns1:currentCapacity "5667 books" ;
+    ns2:isLocatedOn <http://www.example.org/resource/FirstFloor> ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_P01> .
+
+<http://www.example.org/resource/GreatHallFormerForensicMedicine> a ns2:RealEstateComponent,
+        ns2:Room ;
+    rdfs:label "Great Hall Former Forensic Medicine" ;
+    ns2:isLocationOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/GreatHallFormerlyOfLegalMedicine> a ns1:Auditorium ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_P00> .
+
+<http://www.example.org/resource/Intern1> ns1:employmentStatus "scholarship" .
+
+<http://www.example.org/resource/Intern2> ns1:employmentStatus "scholarship" .
+
+<http://www.example.org/resource/MainStaircase> a ns1:Staircase ;
+    ns2:isAccessibleFrom <http://www.example.org/resource/MicroscopesClassroom> .
+
+<http://www.example.org/resource/MeetingRoom> a ns2:MeetingRoom ;
+    ns1:isAssignedTo <http://www.example.org/resource/TechnicalAdministrativeAndResearchStaff> ;
+    ns2:isPartOf <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/MuseumStorage1> a ns1:MuseumStorage ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_P02> .
+
+<http://www.example.org/resource/MuseumStorage2> a ns1:MuseumStorage ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_P02> .
+
+<http://www.example.org/resource/OfficeForTechnicalAdministrativeAndResearchStaff> a ns2:Office ;
+    ns1:currentCapacity "15m2" ;
+    ns1:isAssignedTo <http://www.example.org/resource/TechnicalAdministrativeAndResearchStaff> ;
+    ns2:isPartOf <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/PhDStudent1> ns1:employmentStatus "PhD student" .
+
+<http://www.example.org/resource/PhDStudent2> ns1:employmentStatus "PhD student" .
+
+<http://www.example.org/resource/Researcher2> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/SpaziComuni> a ns2:Group ;
+    rdfs:label "DA.SPAZICOMUNI" .
+
+<http://www.example.org/resource/StorageSpace1> a ns1:Storage ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_S01> .
+
+<http://www.example.org/resource/ThirdFloor> a ns2:Level .
+
+<http://www.example.org/resource/TicketOffice> a ns1:PublicSpace ;
+    ns1:currentCapacity "40m2" ;
+    ns2:isPartOf <http://www.example.org/resource/002_A_P00> .
+
+<http://www.example.org/resource/UniversitySpace1> a ns1:UniversitySpace ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_S01> .
+
+<http://www.example.org/resource/Volunteer1> ns1:employmentStatus "Volunteer" .
+
+<http://www.example.org/resource/Volunteer2> ns1:employmentStatus "Volunteer" .
+
+<http://www.example.org/resource/039_A_P02> a ns2:Level ;
+    rdfs:label "039_A_P02" ;
+    ns2:hasPart <http://www.example.org/resource/MuseumStorage1>,
+        <http://www.example.org/resource/MuseumStorage2> .
+
+<http://www.example.org/resource/039_A_S01> a ns2:Level ;
+    rdfs:label "039_A_S01" ;
+    ns2:hasPart <http://www.example.org/resource/StorageSpace1>,
+        <http://www.example.org/resource/UniversitySpace1> .
+
+<http://www.example.org/resource/GreatHallOfAnatomy> a ns1:Auditorium ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_P00> .
+
+<http://www.example.org/resource/GroundFloor> rdfs:label "002_A_P00",
+        "Ground Floor" ;
+    ns2:hasPart <http://www.example.org/resource/002_A_P00_0790>,
+        <http://www.example.org/resource/002_A_P00_0820>,
+        <http://www.example.org/resource/002_A_P00_0861>,
+        <http://www.example.org/resource/002_A_P00_0870>,
+        <http://www.example.org/resource/GreatHallFormerForensicMedicine>,
+        <http://www.example.org/resource/MainEntrance1>,
+        <http://www.example.org/resource/MainEntrance2>,
+        <http://www.example.org/resource/MainEntrance3>,
+        <http://www.example.org/resource/MainEntrance4> .
+
+<http://www.example.org/resource/Researcher1> ns1:employmentStatus "Researcher" ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/MicroscopesClassroom> a ns1:MicroscopesClassroom ;
+    ns2:isPartOf <http://www.example.org/resource/039_A_P00mezzanine> .
+
+<http://www.example.org/resource/039_A_P00> a ns2:Level ;
+    rdfs:label "039_A_P00" ;
+    ns2:hasPart <http://www.example.org/resource/039_A_P00_1290>,
+        <http://www.example.org/resource/039_A_P00_1294>,
+        <http://www.example.org/resource/GreatHallFormerlyOfLegalMedicine>,
+        <http://www.example.org/resource/GreatHallOfAnatomy> .
+
+<http://www.example.org/resource/MuseumOfCriminalAnthropology> a ns1:Museum,
+        ns2:Museum ;
+    rdfs:label "Museum of Criminal Anthropology" .
+
+<http://www.example.org/resource/MuseumOfHumanAnatomy> a ns1:Museum,
+        ns2:Museum ;
+    rdfs:label "Museum of Human Anatomy" .
+
+<http://www.example.org/resource/039_A_P01> a ns2:Level ;
+    rdfs:label "039_A_P01" ;
+    ns2:hasPart <http://www.example.org/resource/039_A_P01_1234>,
+        <http://www.example.org/resource/DepartmentOffice1>,
+        <http://www.example.org/resource/DepartmentOffice2>,
+        <http://www.example.org/resource/FederatedLibraryOfMedicine> .
+
+<http://www.example.org/resource/StorageFirstFloor> a ns1:Storage ;
+    rdfs:label "Storage in the First Floor" ;
+    ns1:hasCapacity "700" ;
+    ns1:hasContent ns1:AirConditionedRoom,
+        ns1:CleanArtifactsStorageRoom,
+        ns1:DirtyMaterialsStorageRoom,
+        ns1:HumanEvolutionCollections,
+        ns1:MiscellaneousMaterials,
+        ns1:OsteologicalCollections ;
+    ns1:isLocatedOn <http://www.example.org/resource/FirstFloor> ;
+    ns1:isRequiredCapacity "1300" .
+
+<http://www.example.org/resource/FirstFloor> rdfs:label "002_A_P01",
+        "First Floor",
+        "FirstFloor" ;
+    ns2:hasPart <http://www.example.org/resource/002_A_P01_1280>,
+        <http://www.example.org/resource/002_A_P01_1540>,
+        <http://www.example.org/resource/MeetingRoom>,
+        <http://www.example.org/resource/OfficeForTechnicalAdministrativeAndResearchStaff> .
+

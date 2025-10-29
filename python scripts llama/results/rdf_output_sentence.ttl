@@ -1,0 +1,1298 @@
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:PalaceOfAnatomicalInstitutes rdf:type rec:Building.
+exr:PalaceOfAnatomicalInstitutes rdf:type rec:RealEstateComponent.
+exr:PalaceOfAnatomicalInstitutes rdfs:label "PalaceOfAnatomicalInstitutes".
+exr:PalaceOfAnatomicalInstitutes rec:isLocationOf exr:CityOfTurin.
+exr:PalaceOfAnatomicalInstitutes rec:address exr:CorsoMassimoDAzeglio, exr:ViaGaetanoDonizetti, exr:ViaPietroGiuria, exr:ViaMichelangeloBuonarroti.
+exr:PalaceOfAnatomicalInstitutes rec:ownedBy exr:CityOfTurin.
+exr:PalaceOfAnatomicalInstitutes rec:hasPart exr:Block.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:UniversityOfTurin rdf:type rec:Organization.
+exr:UniversityOfTurin rdfs:label "University of Turin".
+exr:UniversityOfTurin rdf:type rec:RealEstateOwner.
+exr:UniversityOfTurin rec:owns exr:PalazzoDegliStemmi.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:UniversityOfTurin rdf:type rec:Organization.
+exr:PalazzoDegliStemmi rdf:type rec:Building.
+exr:PalazzoDegliStemmi rdf:type rec:RealEstateComponent.
+exr:PalazzoDegliStemmi rec:isLocationOf exr:Directorate.
+exr:PalazzoDegliStemmi rdfs:label "002_A".
+exr:PalazzoDegliStemmi rec:address exr:ViaPo29.
+exr:PalazzoDegliStemmi rec:ownedBy exr:UniversityofTurin.
+exr:PalazzoDegliStemmi rec:hasPart exr:002_A_P00, exr:002_A_P01.
+exr:PalazzoDegliStemmi rec:hasPart exr:BasementFloor, exr:GroundFloor, exr:FirstFloor, exr:SecondFloor, exr:ThirdFloor.
+exr:BasementFloor rdf:type rec:Level.
+exr:BasementFloor rdfs:label "002_A_S01".
+exr:BasementFloor rec:hasPart rec:Storage.
+exr:BasementFloor rec:hasPart exr:002_A_S01_0010, exr:002_A_S01_0110.
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "002_A_P00".
+exr:GroundFloor rec:hasPart exr:002_A_P00_0790, exr:002_A_P00_0861, exr:002_A_P00_0870, exr:002_A_P00_0820.
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "002_A_P01".
+exr:FirstFloor rec:hasPart exr:002_A_P01_1280, exr:002_A_P01_1540.
+exr:SecondFloor rdf:type rec:Level.
+exr:ThirdFloor rdf:type rec:Level.
+exr:002_A_P00_0790 rdf:type rec:Office.
+exr:002_A_P00_0790 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0790 exo:currentCapacity "39m2".
+exr:002_A_P00_0861 rdf:type exo:Infopoint.
+exr:002_A_P00_0861 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0861 exo:currentCapacity "13m2".
+exr:002_A_P00_0870 rdf:type rec:Reception.
+exr:002_A_P00_0870 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0870 exo:isAssignedTo exr:SpaziComuni.
+exr:002_A_P00_0870 exo:currentCapacity "39m2".
+exr:002_A_P00_0820 rdf:type exo:Closet.
+exr:002_A_P00_0820 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0820 exo:currentCapacity "3m2".
+exr:002_A_P01_1280 rdf:type rec:Office.
+exr:002_A_P01_1280 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1280 exo:isAssignedTo exr:DirezionePersonale.
+exr:002_A_P01_1280 rec:isLocationOf exr:Employee.
+exr:002_A_P01_1280 exo:currentCapacity "31m2".
+exr:002_A_P01_1540 rdf:type rec:Office.
+exr:002_A_P01_1540 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1540 exo:isAssignedTo exr:DirezioneSicurezzaLogisticaEManutenzione.
+exr:002_A_P01_1540 rec:isLocationOf exr:Researcher1, exr:Researcher2.
+exr:002_A_P01_1540 exo:currentCapacity "14m2".
+exr:002_A_P01_1540 exo:requiredCapacity "20m2".
+exr:002_A_S01_0010 rdf:type rec:Storeroom.
+exr:002_A_S01_0010 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0010 exo:isAssignedTo exr:DirezioneGenerale.
+exr:002_A_S01_0010 exo:currentCapacity "51m2".
+exr:002_A_S01_0110 rdf:type rec:Serveroom.
+exr:002_A_S01_0110 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0110 exo:isAssignedTo exr:DirezioneSistemiInformativiPortaleElearning.
+exr:002_A_S01_0110 exo:currentCapacity "53m2".
+exr:002_A_S01_0110 exo:requiredCapacity "65m2".
+exr:SistemaMusealeDiAteneo rdf:type rec:Organization.
+exr:SistemaMusealeDiAteneo rdfs:label "Sistema Museale di Ateneo".
+exr:PalazzoDegliStemmi rec:hasPart exr:SistemaMusealeDiAteneo.
+exr:MuseoDiAnatomiaUmana rdf:type exo:Museum.
+exr:MuseoDiAnatomiaUmana rdfs:label "Museo di Anatomia Umana".
+exr:MuseoDiCriminologiaAntropologica rdf:type exo:Museum.
+exr:MuseoDiCriminologiaAntropologica rdfs:label "Museo di Criminologia Antropologica".
+exr:MuseoDiFrutta rdf:type exo:Museum.
+exr:MuseoDiFrutta rdfs:label "Museo di Frutta".
+exr:MuseoDiAntropologiaEtnografia rdf:type exo:Museum.
+exr:MuseoDiAntropologiaEtnografia rdfs:label "Museo di Antropologia e Etnografia".
+exr:MuseoDiUomo rdf:type exo:Museum.
+exr:MuseoDiUomo rdfs:label "Museo di Uomo".
+exr:PalazzoDegliStemmi rec:hasPart exr:MuseoDiAnatomiaUmana, exr:MuseoDiCriminologiaAntropologica, exr:MuseoDiFrutta.
+exr:MuseoDiAntropologiaEtnografia rdfs:label "Museo di Antropologia e Etnografia".
+exr:MuseoDiUomo rdfs:label "Museo di Uomo".
+exr:PalazzoDegliStemmi rec:hasPart exr:MuseoDiAntropologiaEtnografia, exr:MuseoDiUomo.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:PalaceOfTheAnatomicalInstitutes rdf:type rec:Building.
+exr:PalaceOfTheAnatomicalInstitutes rdf:type rec:RealEstateComponent.
+exr:PalaceOfTheAnatomicalInstitutes rdfs:label "PalaceOfTheAnatomicalInstitutes".
+exr:PalaceOfTheAnatomicalInstitutes rec:isLocationOf exr:Directorate.
+exr:PalaceOfTheAnatomicalInstitutes rec:address exr:AnatomicalInstitutes.
+exr:PalaceOfTheAnatomicalInstitutes rec:ownedBy exr:UniversityofTurin.
+exr:PalaceOfTheAnatomicalInstitutes rec:hasPart exr:GroundFloor, exr:FirstFloor, exr:SecondFloor, exr:ThirdFloor, exr:BasementFloor.
+exr:BasementFloor rdf:type rec:Level.
+exr:BasementFloor rdfs:label "BasementFloor".
+exr:BasementFloor rec:hasPart rec:Storage.
+exr:BasementFloor rec:hasPart exr:002_A_S01_0010.
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "GroundFloor".
+exr:GroundFloor rec:hasPart exr:002_A_P00_0790, exr:002_A_P00_0861, exr:002_A_P00_0870, exr:002_A_P00_0820.
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "FirstFloor".
+exr:FirstFloor rec:hasPart exr:002_A_P01_1280, exr:002_A_P01_1540.
+exr:SecondFloor rdf:type rec:Level.
+exr:SecondFloor rdfs:label "SecondFloor".
+exr:ThirdFloor rdf:type rec:Level.
+exr:ThirdFloor rdfs:label "ThirdFloor".
+exr:002_A_P00_0790 rdf:type rec:Office.
+exr:002_A_P00_0790 rec:isPartOf exr:GroundFloor.
+exr:002_A_P00_0790 exo:currentCapacity "39m2".
+exr:002_A_P00_0861 rdf:type exo:Infopoint.
+exr:002_A_P00_0861 rec:isPartOf exr:GroundFloor.
+exr:002_A_P00_0861 exo:currentCapacity "13m2".
+exr:002_A_P00_0870 rdf:type rec:Reception.
+exr:002_A_P00_0870 rec:isPartOf exr:GroundFloor.
+exr:002_A_P00_0870 exo:isAssignedTo exr:SpaziComuni.
+exr:002_A_P00_0870 exo:currentCapacity "39m2".
+exr:002_A_P00_0820 rdf:type exo:Closet.
+exr:002_A_P00_0820 rec:isPartOf exr:GroundFloor.
+exr:002_A_P00_0820 exo:currentCapacity "3m2".
+exr:002_A_P01_1280 rdf:type rec:Office.
+exr:002_A_P01_1280 rec:isPartOf exr:FirstFloor.
+exr:002_A_P01_1280 exo:isAssignedTo exr:DirezionePersonale.
+exr:002_A_P01_1280 rec:isLocationOf exr:Employee.
+exr:002_A_P01_1280 exo:currentCapacity "31m2".
+exr:002_A_P01_1540 rdf:type rec:Office.
+exr:002_A_P01_1540 rec:isPartOf exr:FirstFloor.
+exr:002_A_P01_1540 exo:isAssignedTo exr:DirezioneSicurezzaLogisticaEManutenzione.
+exr:002_A_P01_1540 rec:isLocationOf exr:Researcher1, exr:Researcher2.
+exr:002_A_P01_1540 exo:currentCapacity "14m2".
+exr:002_A_P01_1540 exo:requiredCapacity "20m2".
+exr:002_A_S01_0010 rdf:type rec:Storeroom.
+exr:002_A_S01_0010 rec:isPartOf exr:BasementFloor.
+exr:002_A_S01_0010 exo:isAssignedTo exr:DirezioneGenerale.
+exr:002_A_S01_0010 exo:currentCapacity "51m2".
+exr:DirezionePersonale rdf:type rec:Group.
+exr:DirezionePersonale rdfs:label "DA.POLO.P08.10".
+exr:DirezioneSicurezzaLogisticaEManutenzione rdf:type rec:Group.
+exr:DirezioneSicurezzaLogisticaEManutenzione rdfs:label "DA.POLO.P08.06".
+exr:SpaziComuni rdf:type rec:Group.	
+exr:SpaziComuni rdfs:label "DA.SPAZICOMUNI".
+exr:DirezioneGenerale rdf:type rec:Group.
+exr:DirezioneGenerale rdfs:label "DA.POLO.P08.01".
+exr:DirezioneSistemiInformativiPortaleElearning rdf:type rec:Group.
+exr:DirezioneSistemiInformativiPortaleElearning rdfs:label "DA.POLO.P08.09".
+exr:Employee1 rdf:type rec:Person.
+exr:Employee1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher1 rdf:type rec:Person.
+exr:Researcher1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher2 rdf:type rec:Person.
+exr:Researcher2 rec:isMemberOf exr:UniversityofTurin.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "039_A_P00".
+exr:GroundFloor rec:hasPart exr:GaetanoDonizettiStreetEntrance, exr:Entrance1, exr:Entrance2, exr:Entrance3, exr:Entrance4.
+exr:GaetanoDonizettiStreetEntrance rdf:type rec:Entrance.
+exr:GaetanoDonizettiStreetEntrance rdfs:label "GaetanoDonizettiStreetEntrance".
+exr:GaetanoDonizettiStreetEntrance rec:isLocatedOn exr:GaetanoDonizettiStreet.
+exr:GaetanoDonizettiStreetEntrance rec:faces exr:OpenCourtyard.
+exr:GaetanoDonizettiStreetEntrance rec:orientation exo:Southwest.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "039_A_P00".
+exr:GroundFloor rec:hasPart exr:039_A_P00_0010, exr:039_A_P00_0020, exr:039_A_P00_0030, exr:039_A_P00_0040, exr:039_A_P00_0050, exr:039_A_P00_0060, exr:039_A_P00_0070, exr:039_A_P00_0080, exr:039_A_P00_0090, exr:039_A_P00_0100, exr:039_A_P00_0110, exr:039_A_P00_0120, exr:039_A_P00_0130, exr:039_A_P00_0140, exr:039_A_P00_0150, exr:039_A_P00_0160, exr:039_A_P00_0170, exr:039_A_P00_0180, exr:039_A_P00_0190, exr:039_A_P00_0200, exr:039_A_P00_0210, exr:039_A_P00_0220, exr:039_A_P00_0230, exr:039_A_P00_0240, exr:039_A_P00_0250, exr:039_A_P00_0260, exr:039_A_P00_0270, exr:039_A_P00_0280, exr:039_A_P00_0290, exr:039_A_P00_0300, exr:039_A_P00_0310, exr:039_A_P00_0320, exr:039_A_P00_0330, exr:039_A_P00_0340, exr:039_A_P00_0350, exr:039_A_P00_0360, exr:039_A_P00_0370, exr:039_A_P00_0380, exr:039_A_P00_0390, exr:039_A_P00_0400, exr:039_A_P00_0410, exr:039_A_P00_0420, exr:039_A_P00_0430, exr:039_A_P00_0440, exr:039_A_P00_0450, exr:039_A_P00_0460, exr:039_A_P00_0470, exr:039_A_P00_0480, exr:039_A_P00_0490, exr:039_A_P00_0500, exr:039_A_P00_0510, exr:039_A_P00_0520, exr:039_A_P00_0530, exr:039_A_P00_0540, exr:039_A_P00_0550, exr:039_A_P00_0560, exr:039_A_P00_0570, exr:039_A_P00_0580, exr:039_A_P00_0590, exr:039_A_P00_0600, exr:039_A_P00_0610, exr:039_A_P00_0620, exr:039_A_P00_0630, exr:039_A_P00_0640, exr:039_A_P00_0650, exr:039_A_P00_0660, exr:039_A_P00_0670, exr:039_A_P00_0680, exr:039_A_P00_0690, exr:039_A_P00_0700, exr:039_A_P00_0710, exr:039_A_P00_0720, exr:039_A_P00_0730, exr:039_A_P00_0740, exr:039_A_P00_0750, exr:039_A_P00_0760, exr:039_A_P00_0770, exr:039_A_P00_0780, exr:039_A_P00_0790, exr:039_A_P00_0800, exr:039_A_P00_0810, exr:039_A_P00_0820, exr:039_A_P00_0830, exr:039_A_P00_0840, exr:039_A_P00_0850, exr:039_A_P00_0860, exr:039_A_P00_0870, exr:039_A_P00_0880, exr:039_A_P00_0890, exr:039_A_P00_0900, exr:039_A_P00_0910, exr:039_A_P00_0920, exr:039_A_P00_0930, exr:039_A_P00_0940, exr:039_A_P00_0950, exr:039_A_P00_0960, exr:039_A_P00_0970, exr:039_A_P00_0980, exr:039_A_P00_0990, exr:039_A_P00_1000, exr:039_A_P00_1010, exr:039_A_P00_1020, exr:039_A_P00_1030, exr:039_A_P00_1040, exr:039_A_P00_1050, exr:039_A_P00_1060, exr:039_A_P00_1070, exr:039_A_P00_1080, exr:039_A_P00_1090, exr:039_A_P00_1100, exr:039_A_P00_1110, exr:039_A_P00_1120, exr:039_A_P00_1130, exr:039_A_P00_1140, exr:039_A_P00_1150, exr:039_A_P00_1160, exr:039_A_P00_1170, exr:039_A_P00_1180, exr:039_A_P00_1190, exr:039_A_P00_1200, exr:039_A_P00_1210, exr:039_A_P00_1220, exr:039_A_P00_1230, exr:039_A_P00_1240, exr:039_A_P00_1250, exr:039_A_P00_1260, exr:039_A_P00_1270, exr:039_A_P00_1280, exr:039_A_P00_1290, exr:039_A_P00_1300, exr:039_A_P00_1310, exr:039_A_P00_1320, exr:039_A_P00_1330, exr:039_A_P00_1340, exr:039_A_P00_1350, exr:039_A_P00_1360, exr:039_A_P00_1370, exr:039_A_P00_1380, exr:039_A_P00_1390, exr:039_A_P00_1400, exr:039_A_P00_1410, exr:039_A_P00_1420, exr:039_A_P00_1430, exr:039_A_P00_1440, exr:039_A_P00_1450, exr:039_A_P00_1460, exr:039_A_P00_1470, exr:039_A_P00_1480, exr:039_A_P00_1490, exr:039_A_P00_1500, exr:039_A_P00_1510, exr:039_A_P00_1520, exr:039_A_P00_1530, exr:039_A_P00_1540, exr:039_A_P00_1550, exr:039_A_P00_1560, exr:039_A_P00_1570, exr:039_A_P00_1580, exr:039_A_P00_1590, exr:039_A_P00_1600, exr:039_A_P00_1610, exr:039_A_P00_1620, exr:039_A_P00_1630, exr:039_A_P00_1640, exr:039_A_P00_1650, exr:039_A_P00_1660, exr:039_A_P00_1670, exr:039_A_P00_1680, exr:039_A_P00_1690, exr:039_A_P00_1700, exr:039_A_P00_1710, exr:039_A_P00_1720, exr:039_A_P00_1730, exr:039_A_P00_1740, exr:039_A_P00_1750, exr:039_A_P00_1760, exr:039_A_P00_1770, exr:039_A_P00_1780, exr:039_A_P00_1790, exr:039_A_P00_1800, exr:039_A_P00_1810, exr:039_A_P00_1820, exr:039_A_P00_1830, exr:039_A_P00_1840, exr:039_A_P00_1850, exr:039_A_P00_1860, exr:039_A_P00_1870, exr:039_A_P00_1880, exr:039_A_P00_1890, exr:039_A_P00_1900, exr:039_A_P00_1910, exr:039_A_P00_1920, exr:039_A_P00_1930, exr:039_A_P00_1940, exr:039_A_P00_1950, exr:039_A_P00_1960, exr:039_A_P00_1970, exr:039_A_P00_1980, exr:039_A_P00_1990, exr:039_A_P00_2000, exr:039_A_P00_2010, exr:039_A_P00_2020, exr:039_A_P00_2030, exr:039_A_P00_2040, exr:039_A_P00_2050, exr:039_A_P00_2060, exr:039_A_P00_2070, exr:039_A_P00_2080, exr:039_A_P00_2090, exr:039_A_P00_2100, exr:039_A_P00_2110, exr:039_A_P00_2120, exr:039_A_P00_2130, exr:039_A_P00_2140, exr:039_A_P00_2150, exr:039_A_P00_2160, exr:039_A_P00_2170, exr:039_A_P00_2180, exr:039_A_P00_2190, exr:039_A_P00_2200, exr:039_A_P00_2210, exr:039_A_P00_2220, exr:039_A_P00_2230, exr:039_A_P00_2240, exr:039_A_P00_2250, exr:039_A_P00_2260, exr:039_A_P00_2270, exr:039_A_P00_2280, exr:039_A_P00_2290, exr:039_A_P00_2300, exr:039_A_P00_2310, exr:039_A_P00_2320, exr:039_A_P00_2330, exr:039_A_P00_2340, exr:039_A_P00_2350, exr:039_A_P00_2360, exr:039_A_P00_2370, exr:039_A_P00_2380, exr:039_A_P00_2390, exr:039_A_P00_2400, exr:039_A_P00_2410, exr:039_A_P00_2420, exr:039_A_P00_2430, exr:039_A_P00_2440, exr:039_A_P00_2450, exr:039_A_P00_2460, exr:039_A_P00_2470, exr:039_A_P00_2480, exr:039_A_P00_2490, exr:039_A_P00_2500, exr:039_A_P00_2510, exr:039_A_P00_2520, exr:039_A_P00_2530, exr:039_A_P00_2540, exr:039_A_P00_2550, exr:039_A_P00_2560, exr:039_A_P00_2570, exr:039_A_P00_2580, exr:039_A_P00_2590, exr:039_A_P00_2600, exr:039_A_P00_2610, exr:039_A_P00_2620, exr:039_A_P00_2630, exr:039_A_P00_2640, exr:039_A_P00_2650, exr:039_A_P00_2660, exr:039_A_P00_2670, exr:039_A_P00_2680, exr:039_A_P00_2690, exr:039_A_P00_2700, exr:039_A_P00_2710, exr:039_A_P00_2720, exr:039_A_P00_2730, exr:039_A_P00_2740, exr:039_A_P00_2750, exr:039_A_P00_2760, exr:039_A_P00_2770, exr:039_A_P00_2780, exr:039_A_P00_2790, exr:039_A_P00_2800, exr:039_A_P00_2810, exr:039_A_P00_2820, exr:039_A_P00_2830, exr:039_A_P00_2840, exr:039_A_P00_2850, exr:039_A_P00_2860, exr:039_A_P00_2870, exr:039_A_P00_2880, exr:039_A_P00_2890, exr:039_A_P00_2900, exr:039_A_P00_2910, exr:039_A_P00_2920, exr:039_A_P00_2930, exr:039_A_P00_2940, exr:039_A_P00_2950, exr:039_A_P00_2960, exr:039_A_P00_2970, exr:039_A_P00_2980, exr:039_A_P00_2990, exr:039_A_P00_3000, exr:039_A_P00_3010, exr:039_A_P00_3020, exr:039_A_P00_3030, exr:039_A_P00_3040, exr:039_A_P00_3050, exr:039_A_P00_3060, exr:039_A_P00_3070, exr:039_A_P00_3080, exr:039_A_P00_3090, exr:039_A_P00_3100, exr:039_A_P00_3110, exr:039_A_P00_3120, exr:039_A_P00_3130, exr:039_A_P00_3140, exr:039_A_P00_3150, exr:039_A_P00_3160, exr:039_A_P00_3170, exr:039_A_P00_3180, exr:039_A_P00_3190, exr:039_A_P00_3200, exr:039_A_P00_3210, exr:039_A_P00_3220, exr:039_A_P00_3230, exr:039_A_P00_3240, exr:039_A_P00_3250, exr:039_A_P00_3260, exr:039_A_P00_3270, exr:039_A_P00_3280, exr:039_A_P00_3290, exr:039_A_P00_3300, exr:039_A_P00_3310, exr:039_A_P00_3320, exr:039_A_P00_3330, exr:039_A_P00_3340, exr:039_A_P00_3350, exr:039_A_P00_3360, exr:039_A_P00_3370, exr:039_A_P00_3380, exr:039_A_P00_3390, exr:039_A_P00_3400, exr:039_A_P00_3410, exr:039_A_P00_3420, exr:039_A_P00_3430, exr:039_A_P00_3440, exr:039_A_P00_3450, exr:039_A_P00_3460, exr:039_A_P00_3470, exr:039_A_P00_3480, exr:039_A_P00_3490, exr:039_A_P00_3500, exr:039_A_P00_3510, exr:039_A_P00_3520, exr:039_A_P00_3530, exr:039_A_P00_3540, exr:039_A_P00_3550, exr:039_A.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "039_A_P00".
+exr:GroundFloor rec:hasPart exr:039_A_P00_0010, exr:039_A_P00_0020.
+exr:039_A_P00_0010 rdf:type exo:Auditorium.
+exr:039_A_P00_0010 rdfs:label "GreatHallOfAnatomy".
+exr:039_A_P00_0010 rec:isPartOf exr:GroundFloor.
+exr:039_A_P00_0020 rdf:type exo:Auditorium.
+exr:039_A_P00_0020 rdfs:label "GreatHallFormerlyOfLegalMedicine".
+exr:039_A_P00_0020 rec:isPartOf exr:GroundFloor.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "039_A_P01".
+exr:FirstFloor rec:hasPart exr:CentralStaircase1, exr:CentralStaircase2, exr:CentralStaircase3, exr:SideStairwell1, exr:SideStairwell2.
+exr:FirstFloor rec:hasPart exr:UniversityMuseums, exr:DepartmentOffices, exr:FederatedLibraryOfMedicine.
+exr:CentralStaircase1 rdf:type rec:Staircase.
+exr:CentralStaircase2 rdf:type rec:Staircase.
+exr:CentralStaircase3 rdf:type rec:Staircase.
+exr:SideStairwell1 rdf:type rec:Stairwell.
+exr:SideStairwell2 rdf:type rec:Stairwell.
+exr:UniversityMuseums rdf:type rec:ExhibitionSpace.
+exr:UniversityMuseums rec:isPartOf exr:FirstFloor.
+exr:DepartmentOffices rdf:type rec:Office.
+exr:DepartmentOffices rec:isPartOf exr:FirstFloor.
+exr:FederatedLibraryOfMedicine rdf:type rec:Library.
+exr:FederatedLibraryOfMedicine rec:isPartOf exr:FirstFloor.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:CesareLombrosoAnatomyTheater rdf:type rec:Room.
+exr:CesareLombrosoAnatomyTheater rdfs:label "039_A_P00_1290".
+exr:MezzanineFloor rdf:type rec:Level.
+exr:MezzanineFloor rdfs:label "039_A_P00mezzanine".
+exr:MezzanineFloor rec:isPartOf exr:039_A_P00.
+exr:039_A_P00 rdf:type rec:Level.
+exr:039_A_P00 rdfs:label "039_A_P00".
+exr:039_A_P00 rec:hasPart exr:MezzanineFloor.
+exr:039_A_P00 rec:hasPart exr:CesareLombrosoAnatomyTheater.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:MicroscopesClassroom rdf:type exo:Classroom.
+exr:MicroscopesClassroom rdfs:label "039_A_P00_1294".
+exr:MicroscopesClassroom rec:isLocatedOn exr:MezzanineFloor.
+exr:MezzanineFloor rdf:type rec:Level.
+exr:MezzanineFloor rdfs:label "039_A_P00".
+exr:MezzanineFloor rec:hasPart exr:MicroscopesClassroom.
+exr:MezzanineFloor rec:isAccessibleFrom exr:MainStaircase1, exr:MainStaircase2, exr:MainStaircase3.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:BasementFloor rdf:type rec:Level.
+exr:BasementFloor rdfs:label "002_A_S01".
+exr:BasementFloor rec:hasPart rec:Storage.
+exr:BasementFloor rec:hasPart exr:002_A_S01_0010, exr:002_A_S01_0110.
+exr:SecondFloor rdf:type rec:Level.
+exr:SecondFloor rdfs:label "002_A_P02".
+exr:SecondFloor rec:hasPart exo:MuseumStorage.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:UniversityOfTurin rdf:type rec:Organization.
+exr:PalazzoDegliStemmi rdf:type rec:Building.
+exr:PalazzoDegliStemmi rdf:type rec:RealEstateComponent.
+exr:PalazzoDegliStemmi rec:isLocationOf exr:Directorate.
+exr:PalazzoDegliStemmi rdfs:label "002_A".
+exr:PalazzoDegliStemmi rec:address exr:ViaPo29.
+exr:PalazzoDegliStemmi rec:ownedBy exr:UniversityofTurin.
+exr:PalazzoDegliStemmi rec:hasPart exr:002_A_P00, exr:002_A_P01.
+exr:PalazzoDegliStemmi rec:hasPart exr:BasementFloor, exr:GroundFloor, exr:FirstFloor, exr:SecondFloor, exr:ThirdFloor.
+exr:BasementFloor rdf:type rec:Level.
+exr:BasementFloor rdfs:label "002_A_S01".
+exr:BasementFloor rec:hasPart rec:Storage.
+exr:BasementFloor rec:hasPart exr:002_A_S01_0010, exr:002_A_S01_0110.
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "002_A_P00".
+exr:GroundFloor rec:hasPart exr:002_A_P00_0790, exr:002_A_P00_0861, exr:002_A_P00_0870, exr:002_A_P00_0820.
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "002_A_P01".
+exr:FirstFloor rec:hasPart exr:002_A_P01_1280, exr:002_A_P01_1540.
+exr:SecondFloor rdf:type rec:Level.
+exr:ThirdFloor rdf:type rec:Level.
+exr:002_A_P00_0790 rdf:type rec:Office.
+exr:002_A_P00_0790 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0790 exo:currentCapacity "39m2".
+exr:002_A_P00_0861 rdf:type exo:Infopoint.
+exr:002_A_P00_0861 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0861 exo:currentCapacity "13m2".
+exr:002_A_P00_0870 rdf:type rec:Reception.
+exr:002_A_P00_0870 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0870 exo:isAssignedTo exr:SpaziComuni.
+exr:002_A_P00_0870 exo:currentCapacity "39m2".
+exr:002_A_P00_0820 rdf:type exo:Closet.
+exr:002_A_P00_0820 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0820 exo:currentCapacity "3m2".
+exr:002_A_P01_1280 rdf:type rec:Office.
+exr:002_A_P01_1280 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1280 exo:isAssignedTo exr:DirezionePersonale.
+exr:002_A_P01_1280 rec:isLocationOf exr:Employee.
+exr:002_A_P01_1280 exo:currentCapacity "31m2".
+exr:002_A_P01_1540 rdf:type rec:Office.
+exr:002_A_P01_1540 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1540 exo:isAssignedTo exr:DirezioneSicurezzaLogisticaEManutenzione.
+exr:002_A_P01_1540 rec:isLocationOf exr:Researcher1, exr:Researcher2.
+exr:002_A_P01_1540 exo:currentCapacity "14m2".
+exr:002_A_P01_1540 exo:requiredCapacity "20m2".
+exr:002_A_S01_0010 rdf:type rec:Storeroom.
+exr:002_A_S01_0010 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0010 exo:isAssignedTo exr:DirezioneGenerale.
+exr:002_A_S01_0010 exo:currentCapacity "51m2".
+exr:002_A_S01_0110 rdf:type rec:Serveroom.
+exr:002_A_S01_0110 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0110 exo:isAssignedTo exr:DirezioneSistemiInformativiPortaleElearning.
+exr:002_A_S01_0110 exo:currentCapacity "53m2".
+exr:002_A_S01_0110 exo:requiredCapacity "65m2".
+exr:DirezionePersonale rdf:type rec:Group.
+exr:DirezionePersonale rdfs:label "DA.POLO.P08.10".
+exr:DirezioneSicurezzaLogisticaEManutenzione rdf:type rec:Group.
+exr:DirezioneSicurezzaLogisticaEManutenzione rdfs:label "DA.POLO.P08.06".
+exr:SpaziComuni rdf:type rec:Group.	
+exr:SpaziComuni rdfs:label "DA.SPAZICOMUNI".
+exr:DirezioneGenerale rdf:type rec:Group.
+exr:DirezioneGenerale rdfs:label "DA.POLO.P08.01".
+exr:DirezioneSistemiInformativiPortaleElearning rdf:type rec:Group.
+exr:DirezioneSistemiInformativiPortaleElearning rdfs:label "DA.POLO.P08.09".
+exr:Employee1 rdf:type rec:Person.
+exr:Employee1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher1 rdf:type rec:Person.
+exr:Researcher1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher2 rdf:type rec:Person.
+exr:Researcher2 rec:isMemberOf exr:UniversityofTurin.
+exr:FirstFloor rec:hasCapacity "1646m2".
+exr:FirstFloor rec:hasExhibitionRoutes exo:true.
+exr:FirstFloor rec:hasNonExhibitionSpaces exo:true.
+exr:FirstFloor rec:hasStorageSpaces exo:false.
+exr:FirstFloor rec:hasArchives exo:false.
+exr:FirstFloor rec:hasLaboratories exo:false.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:UniversityOfTurin rdf:type rec:Organization.
+exr:PalazzoDegliStemmi rdf:type rec:Building.
+exr:PalazzoDegliStemmi rdf:type rec:RealEstateComponent.
+exr:PalazzoDegliStemmi rec:isLocationOf exr:Directorate.
+exr:PalazzoDegliStemmi rdfs:label "002_A".
+exr:PalazzoDegliStemmi rec:address exr:ViaPo29.
+exr:PalazzoDegliStemmi rec:ownedBy exr:UniversityofTurin.
+exr:PalazzoDegliStemmi rec:hasPart exr:002_A_P00, exr:002_A_P01.
+exr:PalazzoDegliStemmi rec:hasPart exr:BasementFloor, exr:GroundFloor, exr:FirstFloor, exr:SecondFloor, exr:ThirdFloor.
+exr:BasementFloor rdf:type rec:Level.
+exr:BasementFloor rdfs:label "002_A_S01".
+exr:BasementFloor rec:hasPart rec:Storage.
+exr:BasementFloor rec:hasPart exr:002_A_S01_0010, exr:002_A_S01_0110.
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "002_A_P00".
+exr:GroundFloor rec:hasPart exr:002_A_P00_0790, exr:002_A_P00_0861, exr:002_A_P00_0870, exr:002_A_P00_0820.
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "002_A_P01".
+exr:FirstFloor rec:hasPart exr:002_A_P01_1280, exr:002_A_P01_1540, exr:039_A_P01_2190, exr:039_A_P01_2195, exr:039_A_P01_2245, exr:039_A_P01_2430.
+exr:SecondFloor rdf:type rec:Level.
+exr:ThirdFloor rdf:type rec:Level.
+exr:002_A_P00_0790 rdf:type rec:Office.
+exr:002_A_P00_0790 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0790 exo:currentCapacity "39m2".
+exr:002_A_P00_0861 rdf:type exo:Infopoint.
+exr:002_A_P00_0861 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0861 exo:currentCapacity "13m2".
+exr:002_A_P00_0870 rdf:type rec:Reception.
+exr:002_A_P00_0870 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0870 exo:isAssignedTo exr:SpaziComuni.
+exr:002_A_P00_0870 exo:currentCapacity "39m2".
+exr:002_A_P00_0820 rdf:type exo:Closet.
+exr:002_A_P00_0820 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0820 exo:currentCapacity "3m2".
+exr:002_A_P01_1280 rdf:type rec:Office.
+exr:002_A_P01_1280 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1280 exo:isAssignedTo exr:DirezionePersonale.
+exr:002_A_P01_1280 rec:isLocationOf exr:Employee.
+exr:002_A_P01_1280 exo:currentCapacity "31m2".
+exr:002_A_P01_1540 rdf:type rec:Office.
+exr:002_A_P01_1540 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1540 exo:isAssignedTo exr:DirezioneSicurezzaLogisticaEManutenzione.
+exr:002_A_P01_1540 rec:isLocationOf exr:Researcher1, exr:Researcher2.
+exr:002_A_P01_1540 exo:currentCapacity "14m2".
+exr:002_A_P01_1540 exo:requiredCapacity "20m2".
+exr:002_A_P01_2190 rdf:type exo:Museum.
+exr:002_A_P01_2190 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_2190 exo:isOccupiedBy exr:MuseumOfCriminalAnthropology.
+exr:002_A_P01_2195 rdf:type exo:Museum.
+exr:002_A_P01_2195 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_2195 exo:isOccupiedBy exr:MuseumOfCriminalAnthropology.
+exr:002_A_P01_2245 rdf:type exo:Museum.
+exr:002_A_P01_2245 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_2245 exo:isOccupiedBy exr:MuseumOfCriminalAnthropology.
+exr:002_A_P01_2430 rdf:type exo:Museum.
+exr:002_A_P01_2430 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_2430 exo:isOccupiedBy exr:MuseumOfCriminalAnthropology.
+exr:DirezionePersonale rdf:type rec:Group.
+exr:DirezionePersonale rdfs:label "DA.POLO.P08.10".
+exr:DirezioneSicurezzaLogisticaEManutenzione rdf:type rec:Group.
+exr:DirezioneSicurezzaLogisticaEManutenzione rdfs:label "DA.POLO.P08.06".
+exr:SpaziComuni rdf:type rec:Group.	
+exr:SpaziComuni rdfs:label "DA.SPAZICOMUNI".
+exr:DirezioneGenerale rdf:type rec:Group.
+exr:DirezioneGenerale rdfs:label "DA.POLO.P08.01".
+exr:DirezioneSistemiInformativiPortaleElearning rdf:type rec:Group.
+exr:DirezioneSistemiInformativiPortaleElearning rdfs:label "DA.POLO.P08.09".
+exr:MuseumOfCriminalAnthropology rdf:type exo:Museum.
+exr:Employee1 rdf:type rec:Person.
+exr:Employee1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher1 rdf:type rec:Person.
+exr:Researcher1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher2 rdf:type rec:Person.
+exr:Researcher2 rec:isMemberOf exr:UniversityofTurin.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:UniversityOfTurin rdf:type rec:Organization.
+exr:PalazzoDegliStemmi rdf:type rec:Building.
+exr:PalazzoDegliStemmi rdf:type rec:RealEstateComponent.
+exr:PalazzoDegliStemmi rec:isLocationOf exr:Directorate.
+exr:PalazzoDegliStemmi rdfs:label "002_A".
+exr:PalazzoDegliStemmi rec:address exr:ViaPo29.
+exr:PalazzoDegliStemmi rec:ownedBy exr:UniversityofTurin.
+exr:PalazzoDegliStemmi rec:hasPart exr:002_A_P00, exr:002_A_P01.
+exr:PalazzoDegliStemmi rec:hasPart exr:BasementFloor, exr:GroundFloor, exr:FirstFloor, exr:SecondFloor, exr:ThirdFloor.
+exr:BasementFloor rdf:type rec:Level.
+exr:BasementFloor rdfs:label "002_A_S01".
+exr:BasementFloor rec:hasPart rec:Storage.
+exr:BasementFloor rec:hasPart exr:002_A_S01_0010, exr:002_A_S01_0110.
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "002_A_P00".
+exr:GroundFloor rec:hasPart exr:002_A_P00_0790, exr:002_A_P00_0861, exr:002_A_P00_0870, exr:002_A_P00_0820.
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "002_A_P01".
+exr:FirstFloor rec:hasPart exr:002_A_P01_1280, exr:002_A_P01_1540, exr:039_A_P01_3010, exr:039_A_P01_2980, exr:039_A_P01_2910, exr:039_A_P01_2830.
+exr:SecondFloor rdf:type rec:Level.
+exr:ThirdFloor rdf:type rec:Level.
+exr:002_A_P00_0790 rdf:type rec:Office.
+exr:002_A_P00_0790 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0790 exo:currentCapacity "39m2".
+exr:002_A_P00_0861 rdf:type exo:Infopoint.
+exr:002_A_P00_0861 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0861 exo:currentCapacity "13m2".
+exr:002_A_P00_0870 rdf:type rec:Reception.
+exr:002_A_P00_0870 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0870 exo:isAssignedTo exr:SpaziComuni.
+exr:002_A_P00_0870 exo:currentCapacity "39m2".
+exr:002_A_P00_0820 rdf:type exo:Closet.
+exr:002_A_P00_0820 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0820 exo:currentCapacity "3m2".
+exr:002_A_P01_1280 rdf:type rec:Office.
+exr:002_A_P01_1280 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1280 exo:isAssignedTo exr:DirezionePersonale.
+exr:002_A_P01_1280 rec:isLocationOf exr:Employee.
+exr:002_A_P01_1280 exo:currentCapacity "31m2".
+exr:002_A_P01_1540 rdf:type rec:Office.
+exr:002_A_P01_1540 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1540 exo:isAssignedTo exr:DirezioneSicurezzaLogisticaEManutenzione.
+exr:002_A_P01_1540 rec:isLocationOf exr:Researcher1, exr:Researcher2.
+exr:002_A_P01_1540 exo:currentCapacity "14m2".
+exr:002_A_P01_1540 exo:requiredCapacity "20m2".
+exr:002_A_P01_3010 rdf:type exo:Museum.
+exr:002_A_P01_3010 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_3010 exo:isAssignedTo exr:MuseumOfHumanAnatomy.
+exr:002_A_P01_3010 exo:currentCapacity "m2".
+exr:002_A_P01_2980 rdf:type exo:Museum.
+exr:002_A_P01_2980 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_2980 exo:isAssignedTo exr:MuseumOfHumanAnatomy.
+exr:002_A_P01_2980 exo:currentCapacity "m2".
+exr:002_A_P01_2910 rdf:type exo:Museum.
+exr:002_A_P01_2910 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_2910 exo:isAssignedTo exr:MuseumOfHumanAnatomy.
+exr:002_A_P01_2910 exo:currentCapacity "m2".
+exr:002_A_P01_2830 rdf:type exo:Museum.
+exr:002_A_P01_2830 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_2830 exo:isAssignedTo exr:MuseumOfHumanAnatomy.
+exr:002_A_P01_2830 exo:currentCapacity "m2".
+exr:002_A_S01_0010 rdf:type rec:Storeroom.
+exr:002_A_S01_0010 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0010 exo:isAssignedTo exr:DirezioneGenerale.
+exr:002_A_S01_0010 exo:currentCapacity "51m2".
+exr:002_A_S01_0110 rdf:type rec:Serveroom.
+exr:002_A_S01_0110 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0110 exo:isAssignedTo exr:DirezioneSistemiInformativiPortaleElearning.
+exr:002_A_S01_0110 exo:currentCapacity "53m2".
+exr:002_A_S01_0110 exo:requiredCapacity "65m2".
+exr:DirezionePersonale rdf:type rec:Group.
+exr:DirezionePersonale rdfs:label "DA.POLO.P08.10".
+exr:DirezioneSicurezzaLogisticaEManutenzione rdf:type rec:Group.
+exr:DirezioneSicurezzaLogisticaEManutenzione rdfs:label "DA.POLO.P08.06".
+exr:SpaziComuni rdf:type rec:Group.	
+exr:SpaziComuni rdfs:label "DA.SPAZICOMUNI".
+exr:DirezioneGenerale rdf:type rec:Group.
+exr:DirezioneGenerale rdfs:label "DA.POLO.P08.01".
+exr:DirezioneSistemiInformativiPortaleElearning rdf:type rec:Group.
+exr:DirezioneSistemiInformativiPortaleElearning rdfs:label "DA.POLO.P08.09".
+exr:MuseumOfHumanAnatomy rdf:type rec:Group.
+exr:MuseumOfHumanAnatomy rdfs:label "MuseumOfHumanAnatomy".
+exr:Employee1 rdf:type rec:Person.
+exr:Employee1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher1 rdf:type rec:Person.
+exr:Researcher1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher2 rdf:type rec:Person.
+exr:Researcher2 rec:isMemberOf exr:UniversityofTurin.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "002_A_P00".
+exr:GroundFloor rec:hasPart exr:002_A_P00_0790, exr:002_A_P00_0861, exr:002_A_P00_0870, exr:002_A_P00_0820, exr:TicketOffice, exr:StaffDressingRoom, exr:StaffRestingRoom, exr:EducationalLaboratory, exr:TemporaryExhibitionArea.
+
+exr:002_A_P00_0790 rdf:type rec:Office.
+exr:002_A_P00_0790 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0790 exo:currentCapacity "39m2".
+
+exr:002_A_P00_0861 rdf:type exo:Infopoint.
+exr:002_A_P00_0861 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0861 exo:currentCapacity "13m2".
+
+exr:002_A_P00_0870 rdf:type rec:Reception.
+exr:002_A_P00_0870 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0870 exo:isAssignedTo exr:SpaziComuni.
+exr:002_A_P00_0870 exo:currentCapacity "39m2".
+
+exr:002_A_P00_0820 rdf:type exo:Closet.
+exr:002_A_P00_0820 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0820 exo:currentCapacity "3m2".
+
+exr:TicketOffice rdf:type exo:TicketOffice.
+exr:TicketOffice rec:isPartOf exr:GroundFloor.
+exr:TicketOffice exo:hasPart exr:BookshopSpace.
+
+exr:BookshopSpace rdf:type exo:Bookshop.
+exr:BookshopSpace rec:isPartOf exr:TicketOffice.
+
+exr:StaffDressingRoom rdf:type exo:StaffDressingRoom.
+exr:StaffDressingRoom rec:isPartOf exr:GroundFloor.
+
+exr:StaffRestingRoom rdf:type exo:StaffRestingRoom.
+exr:StaffRestingRoom rec:isPartOf exr:GroundFloor.
+
+exr:EducationalLaboratory rdf:type exo:EducationalLaboratory.
+exr:EducationalLaboratory rec:isPartOf exr:GroundFloor.
+
+exr:TemporaryExhibitionArea rdf:type exo:TemporaryExhibitionArea.
+exr:TemporaryExhibitionArea rec:isPartOf exr:GroundFloor.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:TicketOffice rdf:type exo:Bookshop.
+exr:TicketOffice exo:currentCapacity "40m2".
+exr:TicketOffice exo:requiredCapacity "40m2".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:StaffDressingRoom rdf:type exo:Closet.
+exr:StaffDressingRoom exo:isLocatedNear exr:TicketOffice.
+exr:StaffDressingRoom exo:currentCapacity "20m2".
+exr:StaffDressingRoom exo:requiredCapacity "30m2".
+exr:StaffDressingRoom exo:isOutOfService "true".
+exr:StaffDressingRoom exo:isUnderRenovation "true".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:StaffRestingRoom rdf:type exo:Room.
+exr:StaffRestingRoom rdfs:label "StaffRestingRoom".
+exr:StaffRestingRoom exo:isLocatedNear exr:TicketOffice.
+exr:StaffRestingRoom exo:currentCapacity "10m2".
+exr:StaffRestingRoom exo:requiredCapacity "21m2".
+exr:StaffRestingRoom exo:isOutOfService "true".
+exr:TicketOffice rdf:type exo:Room.
+exr:TicketOffice rdfs:label "TicketOffice".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:UniversityOfTurin rdf:type rec:Organization.
+exr:PalazzoDegliStemmi rdf:type rec:Building.
+exr:PalazzoDegliStemmi rdf:type rec:RealEstateComponent.
+exr:PalazzoDegliStemmi rec:isLocationOf exr:Directorate.
+exr:PalazzoDegliStemmi rdfs:label "002_A".
+exr:PalazzoDegliStemmi rec:address exr:ViaPo29.
+exr:PalazzoDegliStemmi rec:ownedBy exr:UniversityofTurin.
+exr:PalazzoDegliStemmi rec:hasPart exr:002_A_P00, exr:002_A_P01.
+exr:PalazzoDegliStemmi rec:hasPart exr:BasementFloor, exr:GroundFloor, exr:FirstFloor, exr:SecondFloor, exr:ThirdFloor.
+exr:BasementFloor rdf:type rec:Level.
+exr:BasementFloor rdfs:label "002_A_S01".
+exr:BasementFloor rec:hasPart rec:Storage.
+exr:BasementFloor rec:hasPart exr:002_A_S01_0010, exr:002_A_S01_0110.
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "002_A_P00".
+exr:GroundFloor rec:hasPart exr:002_A_P00_0790, exr:002_A_P00_0861, exr:002_A_P00_0870, exr:002_A_P00_0820.
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "002_A_P01".
+exr:FirstFloor rec:hasPart exr:002_A_P01_1280, exr:002_A_P01_1540.
+exr:SecondFloor rdf:type rec:Level.
+exr:ThirdFloor rdf:type rec:Level.
+exr:002_A_P00_0790 rdf:type rec:Office.
+exr:002_A_P00_0790 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0790 exo:currentCapacity "39m2".
+exr:002_A_P00_0861 rdf:type exo:Infopoint.
+exr:002_A_P00_0861 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0861 exo:currentCapacity "13m2".
+exr:002_A_P00_0870 rdf:type rec:Reception.
+exr:002_A_P00_0870 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0870 exo:isAssignedTo exr:SpaziComuni.
+exr:002_A_P00_0870 exo:currentCapacity "39m2".
+exr:002_A_P00_0820 rdf:type exo:Closet.
+exr:002_A_P00_0820 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0820 exo:currentCapacity "3m2".
+exr:002_A_P01_1280 rdf:type rec:Office.
+exr:002_A_P01_1280 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1280 exo:isAssignedTo exr:DirezionePersonale.
+exr:002_A_P01_1280 rec:isLocationOf exr:Employee.
+exr:002_A_P01_1280 exo:currentCapacity "31m2".
+exr:002_A_P01_1540 rdf:type rec:Office.
+exr:002_A_P01_1540 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1540 exo:isAssignedTo exr:DirezioneSicurezzaLogisticaEManutenzione.
+exr:002_A_P01_1540 rec:isLocationOf exr:Researcher1, exr:Researcher2.
+exr:002_A_P01_1540 exo:currentCapacity "14m2".
+exr:002_A_P01_1540 exo:requiredCapacity "20m2".
+exr:002_A_S01_0010 rdf:type rec:Storeroom.
+exr:002_A_S01_0010 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0010 exo:isAssignedTo exr:DirezioneGenerale.
+exr:002_A_S01_0010 exo:currentCapacity "51m2".
+exr:002_A_S01_0110 rdf:type rec:Serveroom.
+exr:002_A_S01_0110 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0110 exo:isAssignedTo exr:DirezioneSistemiInformativiPortaleElearning.
+exr:002_A_S01_0110 exo:currentCapacity "53m2".
+exr:002_A_S01_0110 exo:requiredCapacity "65m2".
+exr:002_A_P00_0791 rdf:type exo:Office.
+exr:002_A_P00_0791 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0791 exo:currentCapacity "30m2".
+exr:002_A_P00_0791 exo:requiredCapacity "40m2".
+exr:DirezionePersonale rdf:type rec:Group.
+exr:DirezionePersonale rdfs:label "DA.POLO.P08.10".
+exr:DirezioneSicurezzaLogisticaEManutenzione rdf:type rec:Group.
+exr:DirezioneSicurezzaLogisticaEManutenzione rdfs:label "DA.POLO.P08.06".
+exr:SpaziComuni rdf:type rec:Group.	
+exr:SpaziComuni rdfs:label "DA.SPAZICOMUNI".
+exr:DirezioneGenerale rdf:type rec:Group.
+exr:DirezioneGenerale rdfs:label "DA.POLO.P08.01".
+exr:DirezioneSistemiInformativiPortaleElearning rdf:type rec:Group.
+exr:DirezioneSistemiInformativiPortaleElearning rdfs:label "DA.POLO.P08.09".
+exr:Employee1 rdf:type rec:Person.
+exr:Employee1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher1 rdf:type rec:Person.
+exr:Researcher1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher2 rdf:type rec:Person.
+exr:Researcher2 rec:isMemberOf exr:UniversityofTurin.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:TemporaryExhibitionArea rdf:type rec:Space.
+exr:TemporaryExhibitionArea exo:currentSpaceCapacity "0m2".
+exr:TemporaryExhibitionArea exo:requiredSpaceCapacity "151m2".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:DigitizationAndPhotographyLaboratory rdf:type rec:Office.
+exr:DigitizationAndPhotographyLaboratory rec:isPartOf exr:FirstFloor.
+exr:DigitizationAndPhotographyLaboratory exo:currentCapacity "60m2".
+exr:DigitizationAndPhotographyLaboratory exo:requiredCapacity "75m2".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:PaperMaterialRestorationLaboratory rdf:type rec:Room.
+exr:PaperMaterialRestorationLaboratory rdf:type exo:Office.
+exr:PaperMaterialRestorationLaboratory rdfs:label "PaperMaterialRestorationLaboratory".
+exr:PaperMaterialRestorationLaboratory rec:isPartOf exr:FirstFloor.
+exr:PaperMaterialRestorationLaboratory exo:currentCapacity "20m2".
+exr:PaperMaterialRestorationLaboratory exo:requiredCapacity "40m2".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:HistoricalArchive rdf:type rec:Room.
+exr:HistoricalArchive rdf:type exo:Space.
+exr:HistoricalArchive rdfs:label "FirstFloor".
+exr:HistoricalArchive rec:isLocatedOn exr:FirstFloor.
+exr:HistoricalArchive exo:currentSpaceCapacity "130m".
+exr:HistoricalArchive exo:currentEquipments "1 drawer unit with 14 drawers (1,40 m wide X 1 m deep) and 1 drawer unit with 10 drawers (1m wide X 80 cm deep)".
+exr:HistoricalArchive exo:requiredSpaceCapacity "160m".
+exr:HistoricalArchive exo:requiredEquipments "3 drawer units (140X100cm) and 4 consultation desks".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:FederatedLibraryOfMedicine rdf:type rec:Library.
+exr:FederatedLibraryOfMedicine rdf:type rec:RealEstateComponent.
+exr:FederatedLibraryOfMedicine rec:isLocationOf exr:FirstFloor.
+exr:FederatedLibraryOfMedicine exo:currentSpaceCapacity "5667 books".
+exr:FederatedLibraryOfMedicine rdfs:label "Federated Library of Medicine".
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "First Floor".
+exr:FirstFloor rec:hasPart exr:FederatedLibraryOfMedicine.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:Room01 rdf:type rec:Room.
+exr:Room01 rdfs:label "Room 01".
+exr:Room01 exo:hasContent exo:MiscellaneousAnatomicalBooks.
+exr:Room01 exo:hasDonation exo:FerreroDonation, exo:CarraraDonation.
+exo:FerreroDonation rdf:type exo:Donation.
+exo:FerreroDonation exo:numberOfBooks "375".
+exo:CarraraDonation rdf:type exo:Donation.
+exo:CarraraDonation exo:numberOfBooks "202".
+exr:Room02 rdf:type rec:Room.
+exr:Room02 rdfs:label "Room 02".
+exr:Room02 exo:hasContent exo:FrigessiDonation.
+exo:FrigessiDonation rdf:type exo:Donation.
+exo:FrigessiDonation exo:numberOfBooks "4403".
+exr:Room03 rdf:type rec:Room.
+exr:Room03 rdfs:label "Room 03".
+exr:Room03 exo:isPartOf exr:AnthropologyInstitute.
+exo:AnthropologyInstitute rdf:type rec:Organization.
+exo:AnthropologyInstitute rdfs:label "Anthropology Institute".
+exr:Room03 exo:hasDonation exo:BabiniDonation.
+exo:BabiniDonation rdf:type exo:Donation.
+exo:BabiniDonation exo:numberOfBooks "369".
+exr:LombrosoOffice rdf:type rec:Office.
+exr:LombrosoOffice rdfs:label "Lombroso Office".
+exr:LombrosoOffice exo:hasContent exo:ForensicsMedicineBooks.
+exo:ForensicsMedicineBooks rdf:type exo:BookCollection.
+exo:ForensicsMedicineBooks exo:numberOfBooks "205".
+exr:BergaminiStorageCabinet rdf:type rec:StorageCabinet.
+exr:BergaminiStorageCabinet rdfs:label "Bergamini storage cabinet".
+exr:BergaminiStorageCabinet exo:hasContent exo:NeuroscienceBooks.
+exo:NeuroscienceBooks rdf:type exo:BookCollection.
+exo:NeuroscienceBooks exo:numberOfBooks "113".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:UniversityOfTurin rdf:type rec:Organization.
+exr:PalazzoDegliStemmi rdf:type rec:Building.
+exr:PalazzoDegliStemmi rdf:type rec:RealEstateComponent.
+exr:PalazzoDegliStemmi rec:isLocationOf exr:Directorate.
+exr:PalazzoDegliStemmi rdfs:label "002_A".
+exr:PalazzoDegliStemmi rec:address exr:ViaPo29.
+exr:PalazzoDegliStemmi rec:ownedBy exr:UniversityofTurin.
+exr:PalazzoDegliStemmi rec:hasPart exr:002_A_P00, exr:002_A_P01, exr:002_A_S01.
+exr:PalazzoDegliStemmi rec:hasPart exr:BasementFloor, exr:GroundFloor, exr:FirstFloor, exr:SecondFloor, exr:ThirdFloor.
+exr:BasementFloor rdf:type rec:Level.
+exr:BasementFloor rdfs:label "002_A_S01".
+exr:BasementFloor rec:hasPart rec:Storage.
+exr:BasementFloor rec:hasPart exr:002_A_S01_0010, exr:002_A_S01_0110.
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "002_A_P00".
+exr:GroundFloor rec:hasPart exr:002_A_P00_0790, exr:002_A_P00_0861, exr:002_A_P00_0870, exr:002_A_P00_0820.
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "002_A_P01".
+exr:FirstFloor rec:hasPart exr:002_A_P01_1280, exr:002_A_P01_1540.
+exr:SecondFloor rdf:type rec:Level.
+exr:SecondFloor rdfs:label "002_A_P02".
+exr:SecondFloor rec:hasPart rec:Storage.
+exr:ThirdFloor rdf:type rec:Level.
+exr:002_A_P00_0790 rdf:type rec:Office.
+exr:002_A_P00_0790 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0790 exo:currentCapacity "39m2".
+exr:002_A_P00_0861 rdf:type exo:Infopoint.
+exr:002_A_P00_0861 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0861 exo:currentCapacity "13m2".
+exr:002_A_P00_0870 rdf:type rec:Reception.
+exr:002_A_P00_0870 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0870 exo:isAssignedTo exr:SpaziComuni.
+exr:002_A_P00_0870 exo:currentCapacity "39m2".
+exr:002_A_P00_0820 rdf:type exo:Closet.
+exr:002_A_P00_0820 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0820 exo:currentCapacity "3m2".
+exr:002_A_P01_1280 rdf:type rec:Office.
+exr:002_A_P01_1280 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1280 exo:isAssignedTo exr:DirezionePersonale.
+exr:002_A_P01_1280 rec:isLocationOf exr:Employee.
+exr:002_A_P01_1280 exo:currentCapacity "31m2".
+exr:002_A_P01_1540 rdf:type rec:Office.
+exr:002_A_P01_1540 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1540 exo:isAssignedTo exr:DirezioneSicurezzaLogisticaEManutenzione.
+exr:002_A_P01_1540 rec:isLocationOf exr:Researcher1, exr:Researcher2.
+exr:002_A_P01_1540 exo:currentCapacity "14m2".
+exr:002_A_P01_1540 exo:requiredCapacity "20m2".
+exr:002_A_S01_0010 rdf:type rec:Storeroom.
+exr:002_A_S01_0010 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0010 exo:isAssignedTo exr:DirezioneGenerale.
+exr:002_A_S01_0010 exo:currentCapacity "51m2".
+exr:002_A_S01_0110 rdf:type rec:Serveroom.
+exr:002_A_S01_0110 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0110 exo:isAssignedTo exr:DirezioneSistemiInformativiPortaleElearning.
+exr:002_A_S01_0110 exo:currentCapacity "53m2".
+exr:002_A_S01_0110 exo:requiredCapacity "65m2".
+exr:002_A_P02_0010 rdf:type rec:Storeroom.
+exr:002_A_P02_0010 rec:isPartOf exr:002_A_P02.
+exr:002_A_P02_0010 exo:isAssignedTo exr:DirezioneGenerale.
+exr:002_A_P02_0010 exo:currentCapacity "51m2".
+exr:DirezionePersonale rdf:type rec:Group.
+exr:DirezionePersonale rdfs:label "DA.POLO.P08.10".
+exr:DirezioneSicurezzaLogisticaEManutenzione rdf:type rec:Group.
+exr:DirezioneSicurezzaLogisticaEManutenzione rdfs:label "DA.POLO.P08.06".
+exr:SpaziComuni rdf:type rec:Group.	
+exr:SpaziComuni rdfs:label "DA.SPAZICOMUNI".
+exr:DirezioneGenerale rdf:type rec:Group.
+exr:DirezioneGenerale rdfs:label "DA.POLO.P08.01".
+exr:DirezioneSistemiInformativiPortaleElearning rdf:type rec:Group.
+exr:DirezioneSistemiInformativiPortaleElearning rdfs:label "DA.POLO.P08.09".
+exr:Employee1 rdf:type rec:Person.
+exr:Employee1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher1 rdf:type rec:Person.
+exr:Researcher1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher2 rdf:type rec:Person.
+exr:Researcher2 rec:isMemberOf exr:UniversityofTurin.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:AtticStorage rdf:type rec:Storage.
+exr:AtticStorage rdfs:label "SecondFloorStorage".
+exr:AtticStorage exo:currentCapacity "300m2".
+exr:AtticStorage exo:hasContent exo:Packaging, exo:Casts, exo:AnatomicalCollections.
+exr:SecondFloor rdf:type rec:Level.
+exr:SecondFloor rdfs:label "002_A_P01".
+exr:SecondFloor rec:hasPart exr:AtticStorage.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "002_A_P01".
+exr:FirstFloor rec:hasPart exr:002_A_P01_1280, exr:002_A_P01_1540, exr:Storage.
+exr:Storage rdf:type rec:Space.
+exr:Storage rdfs:label "Storage".
+exr:Storage exo:currentCapacity "700m2".
+exr:Storage exo:hasPart exo:AirConditionedRoom, exo:CleanArtifactsStorageRoom, exo:OsteologicalCollections, exo:HumanEvolutionCollections, exo:DirtyMaterialsStorageRoom, exo:MiscellaneousMaterials.
+exo:AirConditionedRoom rdf:type exo:Space.
+exo:AirConditionedRoom exo:currentCapacity "30m2".
+exo:CleanArtifactsStorageRoom rdf:type exo:Space.
+exo:CleanArtifactsStorageRoom exo:currentCapacity "100m2".
+exo:OsteologicalCollections rdf:type exo:Space.
+exo:OsteologicalCollections exo:currentCapacity "270m2".
+exo:HumanEvolutionCollections rdf:type exo:Space.
+exo:HumanEvolutionCollections exo:currentCapacity "100m2".
+exo:DirtyMaterialsStorageRoom rdf:type exo:Space.
+exo:DirtyMaterialsStorageRoom exo:currentCapacity "100m2".
+exo:MiscellaneousMaterials rdf:type exo:Space.
+exo:MiscellaneousMaterials exo:currentCapacity "100m2".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:UniversityOfTurin rdf:type rec:Organization.
+exr:PalazzoDegliStemmi rdf:type rec:Building.
+exr:PalazzoDegliStemmi rdf:type rec:RealEstateComponent.
+exr:PalazzoDegliStemmi rec:isLocationOf exr:Directorate.
+exr:PalazzoDegliStemmi rdfs:label "002_A".
+exr:PalazzoDegliStemmi rec:address exr:ViaPo29.
+exr:PalazzoDegliStemmi rec:ownedBy exr:UniversityofTurin.
+exr:PalazzoDegliStemmi rec:hasPart exr:002_A_P00, exr:002_A_P01.
+exr:PalazzoDegliStemmi rec:hasPart exr:BasementFloor, exr:GroundFloor, exr:FirstFloor, exr:SecondFloor, exr:ThirdFloor.
+exr:BasementFloor rdf:type rec:Level.
+exr:BasementFloor rdfs:label "002_A_S01".
+exr:BasementFloor rec:hasPart rec:Storage.
+exr:BasementFloor rec:hasPart exr:002_A_S01_0010, exr:002_A_S01_0110.
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "002_A_P00".
+exr:GroundFloor rec:hasPart exr:002_A_P00_0790, exr:002_A_P00_0861, exr:002_A_P00_0870, exr:002_A_P00_0820.
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "002_A_P01".
+exr:FirstFloor rec:hasPart exr:002_A_P01_1280, exr:002_A_P01_1540.
+exr:SecondFloor rdf:type rec:Level.
+exr:ThirdFloor rdf:type rec:Level.
+exr:002_A_P00_0790 rdf:type rec:Office.
+exr:002_A_P00_0790 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0790 exo:currentCapacity "39m2".
+exr:002_A_P00_0861 rdf:type exo:Infopoint.
+exr:002_A_P00_0861 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0861 exo:currentCapacity "13m2".
+exr:002_A_P00_0870 rdf:type rec:Reception.
+exr:002_A_P00_0870 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0870 exo:isAssignedTo exr:SpaziComuni.
+exr:002_A_P00_0870 exo:currentCapacity "39m2".
+exr:002_A_P00_0820 rdf:type exo:Closet.
+exr:002_A_P00_0820 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0820 exo:currentCapacity "3m2".
+exr:002_A_P01_1280 rdf:type rec:Office.
+exr:002_A_P01_1280 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1280 exo:isAssignedTo exr:DirezionePersonale.
+exr:002_A_P01_1280 rec:isLocationOf exr:Employee.
+exr:002_A_P01_1280 exo:currentCapacity "31m2".
+exr:002_A_P01_1540 rdf:type rec:Office.
+exr:002_A_P01_1540 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1540 exo:isAssignedTo exr:DirezioneSicurezzaLogisticaEManutenzione.
+exr:002_A_P01_1540 rec:isLocationOf exr:Researcher1, exr:Researcher2.
+exr:002_A_P01_1540 exo:currentCapacity "14m2".
+exr:002_A_P01_1540 exo:requiredCapacity "20m2".
+exr:002_A_S01_0010 rdf:type rec:Storeroom.
+exr:002_A_S01_0010 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0010 exo:isAssignedTo exr:DirezioneGenerale.
+exr:002_A_S01_0010 exo:currentCapacity "51m2".
+exr:002_A_S01_0110 rdf:type rec:Serveroom.
+exr:002_A_S01_0110 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0110 exo:isAssignedTo exr:DirezioneSistemiInformativiPortaleElearning.
+exr:002_A_S01_0110 exo:currentCapacity "53m2".
+exr:002_A_S01_0110 exo:requiredCapacity "65m2".
+exr:DirezionePersonale rdf:type rec:Group.
+exr:DirezionePersonale rdfs:label "DA.POLO.P08.10".
+exr:DirezioneSicurezzaLogisticaEManutenzione rdf:type rec:Group.
+exr:DirezioneSicurezzaLogisticaEManutenzione rdfs:label "DA.POLO.P08.06".
+exr:SpaziComuni rdf:type rec:Group.	
+exr:SpaziComuni rdfs:label "DA.SPAZICOMUNI".
+exr:DirezioneGenerale rdf:type rec:Group.
+exr:DirezioneGenerale rdfs:label "DA.POLO.P08.01".
+exr:DirezioneSistemiInformativiPortaleElearning rdf:type rec:Group.
+exr:DirezioneSistemiInformativiPortaleElearning rdfs:label "DA.POLO.P08.09".
+exr:Employee1 rdf:type rec:Person.
+exr:Employee1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher1 rdf:type rec:Person.
+exr:Researcher1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher2 rdf:type rec:Person.
+exr:Researcher2 rec:isMemberOf exr:UniversityofTurin.
+exr:FirstFloor exo:requiredStorageCapacity "1300m2".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:SepticRoom rdf:type rec:TechnicalRoom.
+exr:SepticRoom rdf:type rec:RealEstateComponent.
+exr:SepticRoom rdfs:label "002_A_S01_0110".
+exr:SepticRoom rec:isPartOf exr:BasementFloor.
+exr:SepticRoom exo:currentCapacity "235m2".
+exr:SepticRoom exo:requiredCapacity "300m2".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:GreatHallFormerForensicMedicine rdf:type rec:Room.
+exr:GreatHallFormerForensicMedicine rdfs:label "Great Hall Former Forensic Medicine".
+exr:GreatHallFormerForensicMedicine rdf:type rec:Office.
+exr:GreatHallFormerForensicMedicine rec:isPartOf exr:GroundFloor.
+exr:GreatHallFormerForensicMedicine exo:isCurrentlyUnserviceable "true".
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "Ground Floor".
+exr:GroundFloor rec:hasPart exr:GreatHallFormerForensicMedicine.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "002_A_P01".
+exr:FirstFloor rec:hasPart exr:002_A_P01_1280, exr:002_A_P01_1540.
+exr:002_A_P01_1280 rdf:type rec:Office.
+exr:002_A_P01_1280 rec:isPartOf exr:FirstFloor.
+exr:002_A_P01_1280 exo:isAssignedTo exr:DirezionePersonale.
+exr:002_A_P01_1280 rec:isLocationOf exr:Employee.
+exr:002_A_P01_1280 exo:currentCapacity "31m2".
+exr:002_A_P01_1540 rdf:type rec:Office.
+exr:002_A_P01_1540 rec:isPartOf exr:FirstFloor.
+exr:002_A_P01_1540 exo:isAssignedTo exr:DirezioneSicurezzaLogisticaEManutenzione.
+exr:002_A_P01_1540 rec:isLocationOf exr:Researcher1, exr:Researcher2.
+exr:002_A_P01_1540 exo:currentCapacity "14m2".
+exr:002_A_P01_1540 exo:requiredCapacity "20m2".
+exr:MeetingRoom rdf:type exo:MeetingRoom.
+exr:MeetingRoom rec:isPartOf exr:FirstFloor.
+exr:MeetingRoom exo:currentCapacity "15users".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:UniversityOfTurin rdf:type rec:Organization.
+exr:UniversityOfTurin rec:hasEmployee exr:Employee1, exr:Employee2, exr:Employee3, exr:Employee4, exr:Employee5, exr:Employee6, exr:Employee7, exr:Employee8.
+exr:Employee1 rdf:type rec:Person.
+exr:Employee1 rec:isMemberOf exr:UniversityofTurin.
+exr:Employee2 rdf:type rec:Person.
+exr:Employee2 rec:isMemberOf exr:UniversityofTurin.
+exr:Employee3 rdf:type rec:Person.
+exr:Employee3 rec:isMemberOf exr:UniversityofTurin.
+exr:Employee4 rdf:type rec:Person.
+exr:Employee4 rec:isMemberOf exr:UniversityofTurin.
+exr:Employee5 rdf:type rec:Person.
+exr:Employee5 rec:isMemberOf exr:UniversityofTurin.
+exr:Employee6 rdf:type rec:Person.
+exr:Employee6 rec:isMemberOf exr:UniversityofTurin.
+exr:Employee7 rdf:type rec:Person.
+exr:Employee7 rec:isMemberOf exr:UniversityofTurin.
+exr:Employee8 rdf:type rec:Person.
+exr:Employee8 rec:isMemberOf exr:UniversityofTurin.
+exr:Employee1 exo:contractType "Full-time".
+exr:Employee2 exo:contractType "Full-time".
+exr:Employee3 exo:contractType "Full-time".
+exr:Employee4 exo:contractType "Full-time".
+exr:Employee5 exo:contractType "Full-time".
+exr:Employee6 exo:contractType "Full-time".
+exr:Employee7 exo:contractType "Full-time".
+exr:Employee8 exo:contractType "Full-time".
+exr:Employee1 exo:employeeType "Employee".
+exr:Employee2 exo:employeeType "Employee".
+exr:Employee3 exo:employeeType "Employee".
+exr:Employee4 exo:employeeType "Employee".
+exr:Employee5 exo:employeeType "Employee".
+exr:Employee6 exo:employeeType "Employee".
+exr:Employee7 exo:employeeType "Employee".
+exr:Employee8 exo:employeeType "Employee".
+exr:Employee1 exo:employeeStatus "Active".
+exr:Employee2 exo:employeeStatus "Active".
+exr:Employee3 exo:employeeStatus "Active".
+exr:Employee4 exo:employeeStatus "Active".
+exr:Employee5 exo:employeeStatus "Active".
+exr:Employee6 exo:employeeStatus "Active".
+exr:Employee7 exo:employeeStatus "Active".
+exr:Employee8 exo:employeeStatus "Active".
+exr:Intern1 rdf:type rec:Person.
+exr:Intern1 rec:isMemberOf exr:UniversityofTurin.
+exr:Intern2 rdf:type rec:Person.
+exr:Intern2 rec:isMemberOf exr:UniversityofTurin.
+exr:Intern1 exo:contractType "Scholarship".
+exr:Intern2 exo:contractType "Scholarship".
+exr:Intern1 exo:employeeType "Intern".
+exr:Intern2 exo:employeeType "Intern".
+exr:Intern1 exo:employeeStatus "Active".
+exr:Intern2 exo:employeeStatus "Active".
+exr:PhDStudent1 rdf:type rec:Person.
+exr:PhDStudent1 rec:isMemberOf exr:UniversityofTurin.
+exr:PhDStudent2 rdf:type rec:Person.
+exr:PhDStudent2 rec:isMemberOf exr:UniversityofTurin.
+exr:PhDStudent1 exo:studentStatus "Active".
+exr:PhDStudent2 exo:studentStatus "Active".
+exr:Researcher1 rdf:type rec:Person.
+exr:Researcher1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher1 exo:employeeType "Researcher".
+exr:Researcher1 exo:employeeStatus "Active".
+exr:Volunteer1 rdf:type rec:Person.
+exr:Volunteer1 rec:isMemberOf exr:UniversityofTurin.
+exr:Volunteer1 exo:employeeType "Volunteer".
+exr:Volunteer1 exo:employeeStatus "Active".
+exr:Volunteer2 rdf:type rec:Person.
+exr:Volunteer2 rec:isMemberOf exr:UniversityofTurin.
+exr:Volunteer2 exo:employeeType "Volunteer".
+exr:Volunteer2 exo:employeeStatus "Active".
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:MunicipalityOfTurin rdf:type rec:Organization.
+exr:Curator rdf:type rec:Person.
+exr:Curator rec:isMemberOf exr:MunicipalityOfTurin.
+@prefix rec: <https://w3id.org/rec/full/>.
+@prefix exr: <http://www.example.org/resource/>.
+@prefix exo: <http://www.example.org/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+exr:UniversityOfTurin rdf:type rec:Organization.
+exr:PalazzoDegliStemmi rdf:type rec:Building.
+exr:PalazzoDegliStemmi rdf:type rec:RealEstateComponent.
+exr:PalazzoDegliStemmi rec:isLocationOf exr:Directorate.
+exr:PalazzoDegliStemmi rdfs:label "002_A".
+exr:PalazzoDegliStemmi rec:address exr:ViaPo29.
+exr:PalazzoDegliStemmi rec:ownedBy exr:UniversityofTurin.
+exr:PalazzoDegliStemmi rec:hasPart exr:002_A_P00, exr:002_A_P01.
+exr:PalazzoDegliStemmi rec:hasPart exr:BasementFloor, exr:GroundFloor, exr:FirstFloor, exr:SecondFloor, exr:ThirdFloor.
+exr:BasementFloor rdf:type rec:Level.
+exr:BasementFloor rdfs:label "002_A_S01".
+exr:BasementFloor rec:hasPart rec:Storage.
+exr:BasementFloor rec:hasPart exr:002_A_S01_0010, exr:002_A_S01_0110.
+exr:GroundFloor rdf:type rec:Level.
+exr:GroundFloor rdfs:label "002_A_P00".
+exr:GroundFloor rec:hasPart exr:002_A_P00_0790, exr:002_A_P00_0861, exr:002_A_P00_0870, exr:002_A_P00_0820.
+exr:FirstFloor rdf:type rec:Level.
+exr:FirstFloor rdfs:label "002_A_P01".
+exr:FirstFloor rec:hasPart exr:002_A_P01_1280, exr:002_A_P01_1540.
+exr:SecondFloor rdf:type rec:Level.
+exr:ThirdFloor rdf:type rec:Level.
+exr:002_A_P00_0790 rdf:type rec:Office.
+exr:002_A_P00_0790 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0790 exo:currentCapacity "39m2".
+exr:002_A_P00_0861 rdf:type exo:Infopoint.
+exr:002_A_P00_0861 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0861 exo:currentCapacity "13m2".
+exr:002_A_P00_0870 rdf:type rec:Reception.
+exr:002_A_P00_0870 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0870 exo:isAssignedTo exr:SpaziComuni.
+exr:002_A_P00_0870 exo:currentCapacity "39m2".
+exr:002_A_P00_0820 rdf:type exo:Closet.
+exr:002_A_P00_0820 rec:isPartOf exr:002_A_P00.
+exr:002_A_P00_0820 exo:currentCapacity "3m2".
+exr:002_A_P01_1280 rdf:type rec:Office.
+exr:002_A_P01_1280 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1280 exo:isAssignedTo exr:DirezionePersonale.
+exr:002_A_P01_1280 rec:isLocationOf exr:Employee.
+exr:002_A_P01_1280 exo:currentCapacity "31m2".
+exr:002_A_P01_1540 rdf:type rec:Office.
+exr:002_A_P01_1540 rec:isPartOf exr:002_A_P01.
+exr:002_A_P01_1540 exo:isAssignedTo exr:DirezioneSicurezzaLogisticaEManutenzione.
+exr:002_A_P01_1540 rec:isLocationOf exr:Researcher1, exr:Researcher2.
+exr:002_A_P01_1540 exo:currentCapacity "14m2".
+exr:002_A_P01_1540 exo:requiredCapacity "20m2".
+exr:002_A_S01_0010 rdf:type rec:Storeroom.
+exr:002_A_S01_0010 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0010 exo:isAssignedTo exr:DirezioneGenerale.
+exr:002_A_S01_0010 exo:currentCapacity "51m2".
+exr:002_A_S01_0110 rdf:type rec:Serveroom.
+exr:002_A_S01_0110 rec:isPartOf exr:002_A_S01.
+exr:002_A_S01_0110 exo:isAssignedTo exr:DirezioneSistemiInformativiPortaleElearning.
+exr:002_A_S01_0110 exo:currentCapacity "53m2".
+exr:002_A_S01_0110 exo:requiredCapacity "65m2".
+exr:DirezionePersonale rdf:type rec:Group.
+exr:DirezionePersonale rdfs:label "DA.POLO.P08.10".
+exr:DirezioneSicurezzaLogisticaEManutenzione rdf:type rec:Group.
+exr:DirezioneSicurezzaLogisticaEManutenzione rdfs:label "DA.POLO.P08.06".
+exr:SpaziComuni rdf:type rec:Group.	
+exr:SpaziComuni rdfs:label "DA.SPAZICOMUNI".
+exr:DirezioneGenerale rdf:type rec:Group.
+exr:DirezioneGenerale rdfs:label "DA.POLO.P08.01".
+exr:DirezioneSistemiInformativiPortaleElearning rdf:type rec:Group.
+exr:DirezioneSistemiInformativiPortaleElearning rdfs:label "DA.POLO.P08.09".
+exr:Employee rdf:type rec:Person.
+exr:Employee rdfs:label "Employee".
+exr:Employee rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher1 rdf:type rec:Person.
+exr:Researcher1 rdfs:label "Researcher1".
+exr:Researcher1 rec:isMemberOf exr:UniversityofTurin.
+exr:Researcher2 rdf:type rec:Person.
+exr:Researcher2 rdfs:label "Researcher2".
+exr:Researcher2 rec:isMemberOf exr:UniversityofTurin.

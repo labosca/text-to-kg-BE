@@ -1,0 +1,865 @@
+@prefix ns1: <https://w3id.org/rec/full/> .
+@prefix ns2: <http://www.example.org/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns2:AnthropologyInstitute a ns1:Organization ;
+    rdfs:label "Anthropology Institute" .
+
+<http://www.example.org/resource/002_A_P00_0791> a ns2:Office ;
+    ns2:currentCapacity "30m2" ;
+    ns2:requiredCapacity "40m2" ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P00> .
+
+<http://www.example.org/resource/002_A_P01_2190> a ns2:Museum ;
+    ns2:isOccupiedBy <http://www.example.org/resource/MuseumOfCriminalAnthropology> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_2195> a ns2:Museum ;
+    ns2:isOccupiedBy <http://www.example.org/resource/MuseumOfCriminalAnthropology> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_2245> a ns2:Museum ;
+    ns2:isOccupiedBy <http://www.example.org/resource/MuseumOfCriminalAnthropology> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_2430> a ns2:Museum ;
+    ns2:isOccupiedBy <http://www.example.org/resource/MuseumOfCriminalAnthropology> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_2830> a ns2:Museum ;
+    ns2:currentCapacity "m2" ;
+    ns2:isAssignedTo <http://www.example.org/resource/MuseumOfHumanAnatomy> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_2910> a ns2:Museum ;
+    ns2:currentCapacity "m2" ;
+    ns2:isAssignedTo <http://www.example.org/resource/MuseumOfHumanAnatomy> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_2980> a ns2:Museum ;
+    ns2:currentCapacity "m2" ;
+    ns2:isAssignedTo <http://www.example.org/resource/MuseumOfHumanAnatomy> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P01_3010> a ns2:Museum ;
+    ns2:currentCapacity "m2" ;
+    ns2:isAssignedTo <http://www.example.org/resource/MuseumOfHumanAnatomy> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P01> .
+
+<http://www.example.org/resource/002_A_P02_0010> a ns1:Storeroom ;
+    ns2:currentCapacity "51m2" ;
+    ns2:isAssignedTo <http://www.example.org/resource/DirezioneGenerale> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P02> .
+
+<http://www.example.org/resource/BergaminiStorageCabinet> a ns1:StorageCabinet ;
+    rdfs:label "Bergamini storage cabinet" ;
+    ns2:hasContent ns2:NeuroscienceBooks .
+
+<http://www.example.org/resource/DigitizationAndPhotographyLaboratory> a ns1:Office .
+
+<http://www.example.org/resource/EducationalLaboratory> a ns2:EducationalLaboratory ;
+    ns1:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/FederatedLibraryOfMedicine> a ns1:RealEstateComponent ;
+    rdfs:label "Federated Library of Medicine" ;
+    ns2:currentSpaceCapacity "5667 books" ;
+    ns1:isLocationOf <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/HistoricalArchive> a ns2:Space,
+        ns1:Room ;
+    rdfs:label "FirstFloor" ;
+    ns2:currentEquipments "1 drawer unit with 14 drawers (1,40 m wide X 1 m deep) and 1 drawer unit with 10 drawers (1m wide X 80 cm deep)" ;
+    ns2:currentSpaceCapacity "130m" ;
+    ns2:requiredEquipments "3 drawer units (140X100cm) and 4 consultation desks" ;
+    ns2:requiredSpaceCapacity "160m" ;
+    ns1:isLocatedOn <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/Intern1> ns2:contractType "Scholarship" ;
+    ns2:employeeStatus "Active" ;
+    ns2:employeeType "Intern" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Intern2> ns2:contractType "Scholarship" ;
+    ns2:employeeStatus "Active" ;
+    ns2:employeeType "Intern" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/LombrosoOffice> a ns1:Office ;
+    rdfs:label "Lombroso Office" ;
+    ns2:hasContent ns2:ForensicsMedicineBooks .
+
+<http://www.example.org/resource/MeetingRoom> a ns2:MeetingRoom ;
+    ns2:currentCapacity "15users" ;
+    ns1:isPartOf <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/MicroscopesClassroom> a ns2:Classroom ;
+    ns1:isLocatedOn <http://www.example.org/resource/MezzanineFloor> .
+
+<http://www.example.org/resource/PalaceOfAnatomicalInstitutes> rdfs:label "PalaceOfAnatomicalInstitutes" ;
+    ns1:hasPart <http://www.example.org/resource/Block> ;
+    ns1:isLocationOf <http://www.example.org/resource/CityOfTurin> ;
+    ns1:ownedBy <http://www.example.org/resource/CityOfTurin> .
+
+<http://www.example.org/resource/PalaceOfTheAnatomicalInstitutes> a ns1:Building,
+        ns1:RealEstateComponent ;
+    rdfs:label "PalaceOfTheAnatomicalInstitutes" ;
+    ns1:address <http://www.example.org/resource/AnatomicalInstitutes> ;
+    ns1:hasPart <http://www.example.org/resource/BasementFloor>,
+        <http://www.example.org/resource/FirstFloor>,
+        <http://www.example.org/resource/GroundFloor>,
+        <http://www.example.org/resource/SecondFloor>,
+        <http://www.example.org/resource/ThirdFloor> ;
+    ns1:isLocationOf <http://www.example.org/resource/Directorate> ;
+    ns1:ownedBy <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/PaperMaterialRestorationLaboratory> a ns2:Office,
+        ns1:Room ;
+    rdfs:label "PaperMaterialRestorationLaboratory" .
+
+<http://www.example.org/resource/PhDStudent1> ns2:studentStatus "Active" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/PhDStudent2> ns2:studentStatus "Active" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Room01> a ns1:Room ;
+    rdfs:label "Room 01" ;
+    ns2:hasContent ns2:MiscellaneousAnatomicalBooks ;
+    ns2:hasDonation ns2:CarraraDonation,
+        ns2:FerreroDonation .
+
+<http://www.example.org/resource/Room02> a ns1:Room ;
+    rdfs:label "Room 02" ;
+    ns2:hasContent ns2:FrigessiDonation .
+
+<http://www.example.org/resource/Room03> a ns1:Room ;
+    rdfs:label "Room 03" ;
+    ns2:hasDonation ns2:BabiniDonation ;
+    ns2:isPartOf <http://www.example.org/resource/AnthropologyInstitute> .
+
+<http://www.example.org/resource/SepticRoom> a ns1:RealEstateComponent,
+        ns1:TechnicalRoom ;
+    rdfs:label "002_A_S01_0110" ;
+    ns2:currentCapacity "235m2" ;
+    ns2:requiredCapacity "300m2" ;
+    ns1:isPartOf <http://www.example.org/resource/BasementFloor> .
+
+<http://www.example.org/resource/StaffDressingRoom> a ns2:Closet,
+        ns2:StaffDressingRoom ;
+    ns2:isLocatedNear <http://www.example.org/resource/TicketOffice> ;
+    ns2:isOutOfService "true" ;
+    ns2:isUnderRenovation "true" ;
+    ns1:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/StaffRestingRoom> a ns2:Room,
+        ns2:StaffRestingRoom ;
+    rdfs:label "StaffRestingRoom" ;
+    ns2:isLocatedNear <http://www.example.org/resource/TicketOffice> ;
+    ns2:isOutOfService "true" ;
+    ns2:requiredCapacity "21m2" ;
+    ns1:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/TemporaryExhibitionArea> a ns2:TemporaryExhibitionArea,
+        ns1:Space ;
+    ns2:currentSpaceCapacity "0m2" ;
+    ns2:requiredSpaceCapacity "151m2" ;
+    ns1:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/UniversityOfTurin> a ns1:RealEstateOwner ;
+    rdfs:label "University of Turin" ;
+    ns1:hasEmployee <http://www.example.org/resource/Employee1>,
+        <http://www.example.org/resource/Employee2>,
+        <http://www.example.org/resource/Employee3>,
+        <http://www.example.org/resource/Employee4>,
+        <http://www.example.org/resource/Employee5>,
+        <http://www.example.org/resource/Employee6>,
+        <http://www.example.org/resource/Employee7>,
+        <http://www.example.org/resource/Employee8> ;
+    ns1:owns <http://www.example.org/resource/PalazzoDegliStemmi> .
+
+<http://www.example.org/resource/Volunteer1> ns2:employeeStatus "Active" ;
+    ns2:employeeType "Volunteer" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Volunteer2> ns2:employeeStatus "Active" ;
+    ns2:employeeType "Volunteer" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+ns2:AirConditionedRoom a ns2:Space ;
+    ns2:currentCapacity "30m2" .
+
+ns2:BabiniDonation a ns2:Donation ;
+    ns2:numberOfBooks "369" .
+
+ns2:CarraraDonation a ns2:Donation ;
+    ns2:numberOfBooks "202" .
+
+ns2:CleanArtifactsStorageRoom a ns2:Space ;
+    ns2:currentCapacity "100m2" .
+
+ns2:DirtyMaterialsStorageRoom a ns2:Space ;
+    ns2:currentCapacity "100m2" .
+
+ns2:FerreroDonation a ns2:Donation ;
+    ns2:numberOfBooks "375" .
+
+ns2:ForensicsMedicineBooks a ns2:BookCollection ;
+    ns2:numberOfBooks "205" .
+
+ns2:FrigessiDonation a ns2:Donation ;
+    ns2:numberOfBooks "4403" .
+
+ns2:HumanEvolutionCollections a ns2:Space ;
+    ns2:currentCapacity "100m2" .
+
+ns2:MiscellaneousMaterials a ns2:Space ;
+    ns2:currentCapacity "100m2" .
+
+ns2:NeuroscienceBooks a ns2:BookCollection ;
+    ns2:numberOfBooks "113" .
+
+ns2:OsteologicalCollections a ns2:Space ;
+    ns2:currentCapacity "270m2" .
+
+<http://www.example.org/resource/002_A_P00_0790> a ns1:Office ;
+    ns2:currentCapacity "39m2" ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P00>,
+        <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/002_A_P00_0820> a ns2:Closet ;
+    ns2:currentCapacity "3m2" ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P00>,
+        <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/002_A_P00_0861> a ns2:Infopoint ;
+    ns2:currentCapacity "13m2" ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P00>,
+        <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/002_A_P00_0870> a ns1:Reception ;
+    ns2:currentCapacity "39m2" ;
+    ns2:isAssignedTo <http://www.example.org/resource/SpaziComuni> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P00>,
+        <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/002_A_P01_1280> a ns1:Office ;
+    ns2:currentCapacity "31m2" ;
+    ns2:isAssignedTo <http://www.example.org/resource/DirezionePersonale> ;
+    ns1:isLocationOf <http://www.example.org/resource/Employee> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P01>,
+        <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/002_A_P01_1540> a ns1:Office ;
+    ns2:currentCapacity "14m2" ;
+    ns2:isAssignedTo <http://www.example.org/resource/DirezioneSicurezzaLogisticaEManutenzione> ;
+    ns2:requiredCapacity "20m2" ;
+    ns1:isLocationOf <http://www.example.org/resource/Researcher1>,
+        <http://www.example.org/resource/Researcher2> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_P01>,
+        <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/002_A_S01_0010> a ns1:Storeroom ;
+    ns2:currentCapacity "51m2" ;
+    ns2:isAssignedTo <http://www.example.org/resource/DirezioneGenerale> ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_S01>,
+        <http://www.example.org/resource/BasementFloor> .
+
+<http://www.example.org/resource/002_A_S01_0110> a ns1:Serveroom ;
+    ns2:currentCapacity "53m2" ;
+    ns2:isAssignedTo <http://www.example.org/resource/DirezioneSistemiInformativiPortaleElearning> ;
+    ns2:requiredCapacity "65m2" ;
+    ns1:isPartOf <http://www.example.org/resource/002_A_S01> .
+
+<http://www.example.org/resource/039_A_P00> a ns1:Level ;
+    rdfs:label "039_A_P00" ;
+    ns1:hasPart <http://www.example.org/resource/CesareLombrosoAnatomyTheater>,
+        <http://www.example.org/resource/MezzanineFloor> .
+
+<http://www.example.org/resource/039_A_P00_0010> a ns2:Auditorium ;
+    rdfs:label "GreatHallOfAnatomy" ;
+    ns1:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/039_A_P00_0020> a ns2:Auditorium ;
+    rdfs:label "GreatHallFormerlyOfLegalMedicine" ;
+    ns1:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/AtticStorage> rdfs:label "SecondFloorStorage" ;
+    ns2:hasContent ns2:AnatomicalCollections,
+        ns2:Casts,
+        ns2:Packaging .
+
+<http://www.example.org/resource/BookshopSpace> a ns2:Bookshop ;
+    ns1:isPartOf <http://www.example.org/resource/TicketOffice> .
+
+<http://www.example.org/resource/CentralStaircase1> a ns1:Staircase .
+
+<http://www.example.org/resource/CentralStaircase2> a ns1:Staircase .
+
+<http://www.example.org/resource/CentralStaircase3> a ns1:Staircase .
+
+<http://www.example.org/resource/CesareLombrosoAnatomyTheater> a ns1:Room .
+
+<http://www.example.org/resource/DepartmentOffices> a ns1:Office ;
+    ns1:isPartOf <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/DirezionePersonale> a ns1:Group ;
+    rdfs:label "DA.POLO.P08.10" .
+
+<http://www.example.org/resource/DirezioneSicurezzaLogisticaEManutenzione> a ns1:Group ;
+    rdfs:label "DA.POLO.P08.06" .
+
+<http://www.example.org/resource/DirezioneSistemiInformativiPortaleElearning> a ns1:Group ;
+    rdfs:label "DA.POLO.P08.09" .
+
+<http://www.example.org/resource/Employee> a ns1:Person ;
+    rdfs:label "Employee" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Employee1> ns2:contractType "Full-time" ;
+    ns2:employeeStatus "Active" ;
+    ns2:employeeType "Employee" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Employee2> ns2:contractType "Full-time" ;
+    ns2:employeeStatus "Active" ;
+    ns2:employeeType "Employee" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Employee3> ns2:contractType "Full-time" ;
+    ns2:employeeStatus "Active" ;
+    ns2:employeeType "Employee" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Employee4> ns2:contractType "Full-time" ;
+    ns2:employeeStatus "Active" ;
+    ns2:employeeType "Employee" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Employee5> ns2:contractType "Full-time" ;
+    ns2:employeeStatus "Active" ;
+    ns2:employeeType "Employee" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Employee6> ns2:contractType "Full-time" ;
+    ns2:employeeStatus "Active" ;
+    ns2:employeeType "Employee" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Employee7> ns2:contractType "Full-time" ;
+    ns2:employeeStatus "Active" ;
+    ns2:employeeType "Employee" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Employee8> a ns1:Person ;
+    ns2:contractType "Full-time" ;
+    ns2:employeeStatus "Active" ;
+    ns2:employeeType "Employee" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/GaetanoDonizettiStreetEntrance> a ns1:Entrance ;
+    rdfs:label "GaetanoDonizettiStreetEntrance" ;
+    ns1:faces <http://www.example.org/resource/OpenCourtyard> ;
+    ns1:isLocatedOn <http://www.example.org/resource/GaetanoDonizettiStreet> ;
+    ns1:orientation ns2:Southwest .
+
+<http://www.example.org/resource/GreatHallFormerForensicMedicine> a ns1:Office,
+        ns1:Room ;
+    rdfs:label "Great Hall Former Forensic Medicine" ;
+    ns2:isCurrentlyUnserviceable "true" ;
+    ns1:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/MuseoDiAnatomiaUmana> a ns2:Museum ;
+    rdfs:label "Museo di Anatomia Umana" .
+
+<http://www.example.org/resource/MuseoDiAntropologiaEtnografia> a ns2:Museum ;
+    rdfs:label "Museo di Antropologia e Etnografia" .
+
+<http://www.example.org/resource/MuseoDiCriminologiaAntropologica> a ns2:Museum ;
+    rdfs:label "Museo di Criminologia Antropologica" .
+
+<http://www.example.org/resource/MuseoDiFrutta> a ns2:Museum ;
+    rdfs:label "Museo di Frutta" .
+
+<http://www.example.org/resource/MuseoDiUomo> a ns2:Museum ;
+    rdfs:label "Museo di Uomo" .
+
+<http://www.example.org/resource/PalazzoDegliStemmi> a ns1:Building,
+        ns1:RealEstateComponent ;
+    rdfs:label "002_A" ;
+    ns1:address <http://www.example.org/resource/ViaPo29> ;
+    ns1:hasPart <http://www.example.org/resource/002_A_P00>,
+        <http://www.example.org/resource/002_A_P01>,
+        <http://www.example.org/resource/002_A_S01>,
+        <http://www.example.org/resource/BasementFloor>,
+        <http://www.example.org/resource/FirstFloor>,
+        <http://www.example.org/resource/GroundFloor>,
+        <http://www.example.org/resource/MuseoDiAnatomiaUmana>,
+        <http://www.example.org/resource/MuseoDiAntropologiaEtnografia>,
+        <http://www.example.org/resource/MuseoDiCriminologiaAntropologica>,
+        <http://www.example.org/resource/MuseoDiFrutta>,
+        <http://www.example.org/resource/MuseoDiUomo>,
+        <http://www.example.org/resource/SecondFloor>,
+        <http://www.example.org/resource/SistemaMusealeDiAteneo>,
+        <http://www.example.org/resource/ThirdFloor> ;
+    ns1:isLocationOf <http://www.example.org/resource/Directorate> ;
+    ns1:ownedBy <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Researcher1> rdfs:label "Researcher1" ;
+    ns2:employeeStatus "Active" ;
+    ns2:employeeType "Researcher" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/Researcher2> a ns1:Person ;
+    rdfs:label "Researcher2" ;
+    ns1:isMemberOf <http://www.example.org/resource/UniversityofTurin> .
+
+<http://www.example.org/resource/SideStairwell1> a ns1:Stairwell .
+
+<http://www.example.org/resource/SideStairwell2> a ns1:Stairwell .
+
+<http://www.example.org/resource/SistemaMusealeDiAteneo> a ns1:Organization ;
+    rdfs:label "Sistema Museale di Ateneo" .
+
+<http://www.example.org/resource/SpaziComuni> a ns1:Group ;
+    rdfs:label "DA.SPAZICOMUNI" .
+
+<http://www.example.org/resource/Storage> a ns1:Space ;
+    rdfs:label "Storage" ;
+    ns2:currentCapacity "700m2" ;
+    ns2:hasPart ns2:AirConditionedRoom,
+        ns2:CleanArtifactsStorageRoom,
+        ns2:DirtyMaterialsStorageRoom,
+        ns2:HumanEvolutionCollections,
+        ns2:MiscellaneousMaterials,
+        ns2:OsteologicalCollections .
+
+<http://www.example.org/resource/UniversityMuseums> a ns1:ExhibitionSpace ;
+    ns1:isPartOf <http://www.example.org/resource/FirstFloor> .
+
+<http://www.example.org/resource/DirezioneGenerale> a ns1:Group ;
+    rdfs:label "DA.POLO.P08.01" .
+
+<http://www.example.org/resource/MezzanineFloor> rdfs:label "039_A_P00" ;
+    ns1:isAccessibleFrom <http://www.example.org/resource/MainStaircase1>,
+        <http://www.example.org/resource/MainStaircase2>,
+        <http://www.example.org/resource/MainStaircase3> ;
+    ns1:isPartOf <http://www.example.org/resource/039_A_P00> .
+
+<http://www.example.org/resource/SecondFloor> rdfs:label "002_A_P01",
+        "002_A_P02",
+        "SecondFloor" ;
+    ns1:hasPart ns2:MuseumStorage,
+        <http://www.example.org/resource/AtticStorage> .
+
+<http://www.example.org/resource/ThirdFloor> a ns1:Level ;
+    rdfs:label "ThirdFloor" .
+
+<http://www.example.org/resource/TicketOffice> a ns2:Bookshop,
+        ns2:Room,
+        ns2:TicketOffice ;
+    rdfs:label "TicketOffice" ;
+    ns2:currentCapacity "40m2" ;
+    ns2:hasPart <http://www.example.org/resource/BookshopSpace> ;
+    ns1:isPartOf <http://www.example.org/resource/GroundFloor> .
+
+<http://www.example.org/resource/BasementFloor> rdfs:label "002_A_S01",
+        "BasementFloor" ;
+    ns1:hasPart <http://www.example.org/resource/002_A_S01_0010>,
+        <http://www.example.org/resource/002_A_S01_0110> .
+
+<http://www.example.org/resource/MuseumOfCriminalAnthropology> a ns2:Museum .
+
+<http://www.example.org/resource/MuseumOfHumanAnatomy> a ns1:Group ;
+    rdfs:label "MuseumOfHumanAnatomy" .
+
+<http://www.example.org/resource/FirstFloor> rdfs:label "002_A_P01",
+        "First Floor",
+        "FirstFloor" ;
+    ns2:requiredStorageCapacity "1300m2" ;
+    ns1:hasArchives ns2:false ;
+    ns1:hasCapacity "1646m2" ;
+    ns1:hasExhibitionRoutes ns2:true ;
+    ns1:hasLaboratories ns2:false ;
+    ns1:hasNonExhibitionSpaces ns2:true ;
+    ns1:hasPart <http://www.example.org/resource/002_A_P01_1280>,
+        <http://www.example.org/resource/002_A_P01_1540>,
+        <http://www.example.org/resource/CentralStaircase1>,
+        <http://www.example.org/resource/CentralStaircase2>,
+        <http://www.example.org/resource/CentralStaircase3>,
+        <http://www.example.org/resource/DepartmentOffices>,
+        <http://www.example.org/resource/SideStairwell1>,
+        <http://www.example.org/resource/SideStairwell2>,
+        <http://www.example.org/resource/Storage>,
+        <http://www.example.org/resource/UniversityMuseums> ;
+    ns1:hasStorageSpaces ns2:false .
+
+<http://www.example.org/resource/GroundFloor> rdfs:label "002_A_P00",
+        "Ground Floor",
+        "GroundFloor" ;
+    ns1:hasPart <http://www.example.org/resource/002_A_P00_0790>,
+        <http://www.example.org/resource/002_A_P00_0820>,
+        <http://www.example.org/resource/002_A_P00_0861>,
+        <http://www.example.org/resource/002_A_P00_0870>,
+        <http://www.example.org/resource/039_A>,
+        <http://www.example.org/resource/039_A_P00_0010>,
+        <http://www.example.org/resource/039_A_P00_0020>,
+        <http://www.example.org/resource/039_A_P00_0030>,
+        <http://www.example.org/resource/039_A_P00_0040>,
+        <http://www.example.org/resource/039_A_P00_0050>,
+        <http://www.example.org/resource/039_A_P00_0060>,
+        <http://www.example.org/resource/039_A_P00_0070>,
+        <http://www.example.org/resource/039_A_P00_0080>,
+        <http://www.example.org/resource/039_A_P00_0090>,
+        <http://www.example.org/resource/039_A_P00_0100>,
+        <http://www.example.org/resource/039_A_P00_0110>,
+        <http://www.example.org/resource/039_A_P00_0120>,
+        <http://www.example.org/resource/039_A_P00_0130>,
+        <http://www.example.org/resource/039_A_P00_0140>,
+        <http://www.example.org/resource/039_A_P00_0150>,
+        <http://www.example.org/resource/039_A_P00_0160>,
+        <http://www.example.org/resource/039_A_P00_0170>,
+        <http://www.example.org/resource/039_A_P00_0180>,
+        <http://www.example.org/resource/039_A_P00_0190>,
+        <http://www.example.org/resource/039_A_P00_0200>,
+        <http://www.example.org/resource/039_A_P00_0210>,
+        <http://www.example.org/resource/039_A_P00_0220>,
+        <http://www.example.org/resource/039_A_P00_0230>,
+        <http://www.example.org/resource/039_A_P00_0240>,
+        <http://www.example.org/resource/039_A_P00_0250>,
+        <http://www.example.org/resource/039_A_P00_0260>,
+        <http://www.example.org/resource/039_A_P00_0270>,
+        <http://www.example.org/resource/039_A_P00_0280>,
+        <http://www.example.org/resource/039_A_P00_0290>,
+        <http://www.example.org/resource/039_A_P00_0300>,
+        <http://www.example.org/resource/039_A_P00_0310>,
+        <http://www.example.org/resource/039_A_P00_0320>,
+        <http://www.example.org/resource/039_A_P00_0330>,
+        <http://www.example.org/resource/039_A_P00_0340>,
+        <http://www.example.org/resource/039_A_P00_0350>,
+        <http://www.example.org/resource/039_A_P00_0360>,
+        <http://www.example.org/resource/039_A_P00_0370>,
+        <http://www.example.org/resource/039_A_P00_0380>,
+        <http://www.example.org/resource/039_A_P00_0390>,
+        <http://www.example.org/resource/039_A_P00_0400>,
+        <http://www.example.org/resource/039_A_P00_0410>,
+        <http://www.example.org/resource/039_A_P00_0420>,
+        <http://www.example.org/resource/039_A_P00_0430>,
+        <http://www.example.org/resource/039_A_P00_0440>,
+        <http://www.example.org/resource/039_A_P00_0450>,
+        <http://www.example.org/resource/039_A_P00_0460>,
+        <http://www.example.org/resource/039_A_P00_0470>,
+        <http://www.example.org/resource/039_A_P00_0480>,
+        <http://www.example.org/resource/039_A_P00_0490>,
+        <http://www.example.org/resource/039_A_P00_0500>,
+        <http://www.example.org/resource/039_A_P00_0510>,
+        <http://www.example.org/resource/039_A_P00_0520>,
+        <http://www.example.org/resource/039_A_P00_0530>,
+        <http://www.example.org/resource/039_A_P00_0540>,
+        <http://www.example.org/resource/039_A_P00_0550>,
+        <http://www.example.org/resource/039_A_P00_0560>,
+        <http://www.example.org/resource/039_A_P00_0570>,
+        <http://www.example.org/resource/039_A_P00_0580>,
+        <http://www.example.org/resource/039_A_P00_0590>,
+        <http://www.example.org/resource/039_A_P00_0600>,
+        <http://www.example.org/resource/039_A_P00_0610>,
+        <http://www.example.org/resource/039_A_P00_0620>,
+        <http://www.example.org/resource/039_A_P00_0630>,
+        <http://www.example.org/resource/039_A_P00_0640>,
+        <http://www.example.org/resource/039_A_P00_0650>,
+        <http://www.example.org/resource/039_A_P00_0660>,
+        <http://www.example.org/resource/039_A_P00_0670>,
+        <http://www.example.org/resource/039_A_P00_0680>,
+        <http://www.example.org/resource/039_A_P00_0690>,
+        <http://www.example.org/resource/039_A_P00_0700>,
+        <http://www.example.org/resource/039_A_P00_0710>,
+        <http://www.example.org/resource/039_A_P00_0720>,
+        <http://www.example.org/resource/039_A_P00_0730>,
+        <http://www.example.org/resource/039_A_P00_0740>,
+        <http://www.example.org/resource/039_A_P00_0750>,
+        <http://www.example.org/resource/039_A_P00_0760>,
+        <http://www.example.org/resource/039_A_P00_0770>,
+        <http://www.example.org/resource/039_A_P00_0780>,
+        <http://www.example.org/resource/039_A_P00_0790>,
+        <http://www.example.org/resource/039_A_P00_0800>,
+        <http://www.example.org/resource/039_A_P00_0810>,
+        <http://www.example.org/resource/039_A_P00_0820>,
+        <http://www.example.org/resource/039_A_P00_0830>,
+        <http://www.example.org/resource/039_A_P00_0840>,
+        <http://www.example.org/resource/039_A_P00_0850>,
+        <http://www.example.org/resource/039_A_P00_0860>,
+        <http://www.example.org/resource/039_A_P00_0870>,
+        <http://www.example.org/resource/039_A_P00_0880>,
+        <http://www.example.org/resource/039_A_P00_0890>,
+        <http://www.example.org/resource/039_A_P00_0900>,
+        <http://www.example.org/resource/039_A_P00_0910>,
+        <http://www.example.org/resource/039_A_P00_0920>,
+        <http://www.example.org/resource/039_A_P00_0930>,
+        <http://www.example.org/resource/039_A_P00_0940>,
+        <http://www.example.org/resource/039_A_P00_0950>,
+        <http://www.example.org/resource/039_A_P00_0960>,
+        <http://www.example.org/resource/039_A_P00_0970>,
+        <http://www.example.org/resource/039_A_P00_0980>,
+        <http://www.example.org/resource/039_A_P00_0990>,
+        <http://www.example.org/resource/039_A_P00_1000>,
+        <http://www.example.org/resource/039_A_P00_1010>,
+        <http://www.example.org/resource/039_A_P00_1020>,
+        <http://www.example.org/resource/039_A_P00_1030>,
+        <http://www.example.org/resource/039_A_P00_1040>,
+        <http://www.example.org/resource/039_A_P00_1050>,
+        <http://www.example.org/resource/039_A_P00_1060>,
+        <http://www.example.org/resource/039_A_P00_1070>,
+        <http://www.example.org/resource/039_A_P00_1080>,
+        <http://www.example.org/resource/039_A_P00_1090>,
+        <http://www.example.org/resource/039_A_P00_1100>,
+        <http://www.example.org/resource/039_A_P00_1110>,
+        <http://www.example.org/resource/039_A_P00_1120>,
+        <http://www.example.org/resource/039_A_P00_1130>,
+        <http://www.example.org/resource/039_A_P00_1140>,
+        <http://www.example.org/resource/039_A_P00_1150>,
+        <http://www.example.org/resource/039_A_P00_1160>,
+        <http://www.example.org/resource/039_A_P00_1170>,
+        <http://www.example.org/resource/039_A_P00_1180>,
+        <http://www.example.org/resource/039_A_P00_1190>,
+        <http://www.example.org/resource/039_A_P00_1200>,
+        <http://www.example.org/resource/039_A_P00_1210>,
+        <http://www.example.org/resource/039_A_P00_1220>,
+        <http://www.example.org/resource/039_A_P00_1230>,
+        <http://www.example.org/resource/039_A_P00_1240>,
+        <http://www.example.org/resource/039_A_P00_1250>,
+        <http://www.example.org/resource/039_A_P00_1260>,
+        <http://www.example.org/resource/039_A_P00_1270>,
+        <http://www.example.org/resource/039_A_P00_1280>,
+        <http://www.example.org/resource/039_A_P00_1290>,
+        <http://www.example.org/resource/039_A_P00_1300>,
+        <http://www.example.org/resource/039_A_P00_1310>,
+        <http://www.example.org/resource/039_A_P00_1320>,
+        <http://www.example.org/resource/039_A_P00_1330>,
+        <http://www.example.org/resource/039_A_P00_1340>,
+        <http://www.example.org/resource/039_A_P00_1350>,
+        <http://www.example.org/resource/039_A_P00_1360>,
+        <http://www.example.org/resource/039_A_P00_1370>,
+        <http://www.example.org/resource/039_A_P00_1380>,
+        <http://www.example.org/resource/039_A_P00_1390>,
+        <http://www.example.org/resource/039_A_P00_1400>,
+        <http://www.example.org/resource/039_A_P00_1410>,
+        <http://www.example.org/resource/039_A_P00_1420>,
+        <http://www.example.org/resource/039_A_P00_1430>,
+        <http://www.example.org/resource/039_A_P00_1440>,
+        <http://www.example.org/resource/039_A_P00_1450>,
+        <http://www.example.org/resource/039_A_P00_1460>,
+        <http://www.example.org/resource/039_A_P00_1470>,
+        <http://www.example.org/resource/039_A_P00_1480>,
+        <http://www.example.org/resource/039_A_P00_1490>,
+        <http://www.example.org/resource/039_A_P00_1500>,
+        <http://www.example.org/resource/039_A_P00_1510>,
+        <http://www.example.org/resource/039_A_P00_1520>,
+        <http://www.example.org/resource/039_A_P00_1530>,
+        <http://www.example.org/resource/039_A_P00_1540>,
+        <http://www.example.org/resource/039_A_P00_1550>,
+        <http://www.example.org/resource/039_A_P00_1560>,
+        <http://www.example.org/resource/039_A_P00_1570>,
+        <http://www.example.org/resource/039_A_P00_1580>,
+        <http://www.example.org/resource/039_A_P00_1590>,
+        <http://www.example.org/resource/039_A_P00_1600>,
+        <http://www.example.org/resource/039_A_P00_1610>,
+        <http://www.example.org/resource/039_A_P00_1620>,
+        <http://www.example.org/resource/039_A_P00_1630>,
+        <http://www.example.org/resource/039_A_P00_1640>,
+        <http://www.example.org/resource/039_A_P00_1650>,
+        <http://www.example.org/resource/039_A_P00_1660>,
+        <http://www.example.org/resource/039_A_P00_1670>,
+        <http://www.example.org/resource/039_A_P00_1680>,
+        <http://www.example.org/resource/039_A_P00_1690>,
+        <http://www.example.org/resource/039_A_P00_1700>,
+        <http://www.example.org/resource/039_A_P00_1710>,
+        <http://www.example.org/resource/039_A_P00_1720>,
+        <http://www.example.org/resource/039_A_P00_1730>,
+        <http://www.example.org/resource/039_A_P00_1740>,
+        <http://www.example.org/resource/039_A_P00_1750>,
+        <http://www.example.org/resource/039_A_P00_1760>,
+        <http://www.example.org/resource/039_A_P00_1770>,
+        <http://www.example.org/resource/039_A_P00_1780>,
+        <http://www.example.org/resource/039_A_P00_1790>,
+        <http://www.example.org/resource/039_A_P00_1800>,
+        <http://www.example.org/resource/039_A_P00_1810>,
+        <http://www.example.org/resource/039_A_P00_1820>,
+        <http://www.example.org/resource/039_A_P00_1830>,
+        <http://www.example.org/resource/039_A_P00_1840>,
+        <http://www.example.org/resource/039_A_P00_1850>,
+        <http://www.example.org/resource/039_A_P00_1860>,
+        <http://www.example.org/resource/039_A_P00_1870>,
+        <http://www.example.org/resource/039_A_P00_1880>,
+        <http://www.example.org/resource/039_A_P00_1890>,
+        <http://www.example.org/resource/039_A_P00_1900>,
+        <http://www.example.org/resource/039_A_P00_1910>,
+        <http://www.example.org/resource/039_A_P00_1920>,
+        <http://www.example.org/resource/039_A_P00_1930>,
+        <http://www.example.org/resource/039_A_P00_1940>,
+        <http://www.example.org/resource/039_A_P00_1950>,
+        <http://www.example.org/resource/039_A_P00_1960>,
+        <http://www.example.org/resource/039_A_P00_1970>,
+        <http://www.example.org/resource/039_A_P00_1980>,
+        <http://www.example.org/resource/039_A_P00_1990>,
+        <http://www.example.org/resource/039_A_P00_2000>,
+        <http://www.example.org/resource/039_A_P00_2010>,
+        <http://www.example.org/resource/039_A_P00_2020>,
+        <http://www.example.org/resource/039_A_P00_2030>,
+        <http://www.example.org/resource/039_A_P00_2040>,
+        <http://www.example.org/resource/039_A_P00_2050>,
+        <http://www.example.org/resource/039_A_P00_2060>,
+        <http://www.example.org/resource/039_A_P00_2070>,
+        <http://www.example.org/resource/039_A_P00_2080>,
+        <http://www.example.org/resource/039_A_P00_2090>,
+        <http://www.example.org/resource/039_A_P00_2100>,
+        <http://www.example.org/resource/039_A_P00_2110>,
+        <http://www.example.org/resource/039_A_P00_2120>,
+        <http://www.example.org/resource/039_A_P00_2130>,
+        <http://www.example.org/resource/039_A_P00_2140>,
+        <http://www.example.org/resource/039_A_P00_2150>,
+        <http://www.example.org/resource/039_A_P00_2160>,
+        <http://www.example.org/resource/039_A_P00_2170>,
+        <http://www.example.org/resource/039_A_P00_2180>,
+        <http://www.example.org/resource/039_A_P00_2190>,
+        <http://www.example.org/resource/039_A_P00_2200>,
+        <http://www.example.org/resource/039_A_P00_2210>,
+        <http://www.example.org/resource/039_A_P00_2220>,
+        <http://www.example.org/resource/039_A_P00_2230>,
+        <http://www.example.org/resource/039_A_P00_2240>,
+        <http://www.example.org/resource/039_A_P00_2250>,
+        <http://www.example.org/resource/039_A_P00_2260>,
+        <http://www.example.org/resource/039_A_P00_2270>,
+        <http://www.example.org/resource/039_A_P00_2280>,
+        <http://www.example.org/resource/039_A_P00_2290>,
+        <http://www.example.org/resource/039_A_P00_2300>,
+        <http://www.example.org/resource/039_A_P00_2310>,
+        <http://www.example.org/resource/039_A_P00_2320>,
+        <http://www.example.org/resource/039_A_P00_2330>,
+        <http://www.example.org/resource/039_A_P00_2340>,
+        <http://www.example.org/resource/039_A_P00_2350>,
+        <http://www.example.org/resource/039_A_P00_2360>,
+        <http://www.example.org/resource/039_A_P00_2370>,
+        <http://www.example.org/resource/039_A_P00_2380>,
+        <http://www.example.org/resource/039_A_P00_2390>,
+        <http://www.example.org/resource/039_A_P00_2400>,
+        <http://www.example.org/resource/039_A_P00_2410>,
+        <http://www.example.org/resource/039_A_P00_2420>,
+        <http://www.example.org/resource/039_A_P00_2430>,
+        <http://www.example.org/resource/039_A_P00_2440>,
+        <http://www.example.org/resource/039_A_P00_2450>,
+        <http://www.example.org/resource/039_A_P00_2460>,
+        <http://www.example.org/resource/039_A_P00_2470>,
+        <http://www.example.org/resource/039_A_P00_2480>,
+        <http://www.example.org/resource/039_A_P00_2490>,
+        <http://www.example.org/resource/039_A_P00_2500>,
+        <http://www.example.org/resource/039_A_P00_2510>,
+        <http://www.example.org/resource/039_A_P00_2520>,
+        <http://www.example.org/resource/039_A_P00_2530>,
+        <http://www.example.org/resource/039_A_P00_2540>,
+        <http://www.example.org/resource/039_A_P00_2550>,
+        <http://www.example.org/resource/039_A_P00_2560>,
+        <http://www.example.org/resource/039_A_P00_2570>,
+        <http://www.example.org/resource/039_A_P00_2580>,
+        <http://www.example.org/resource/039_A_P00_2590>,
+        <http://www.example.org/resource/039_A_P00_2600>,
+        <http://www.example.org/resource/039_A_P00_2610>,
+        <http://www.example.org/resource/039_A_P00_2620>,
+        <http://www.example.org/resource/039_A_P00_2630>,
+        <http://www.example.org/resource/039_A_P00_2640>,
+        <http://www.example.org/resource/039_A_P00_2650>,
+        <http://www.example.org/resource/039_A_P00_2660>,
+        <http://www.example.org/resource/039_A_P00_2670>,
+        <http://www.example.org/resource/039_A_P00_2680>,
+        <http://www.example.org/resource/039_A_P00_2690>,
+        <http://www.example.org/resource/039_A_P00_2700>,
+        <http://www.example.org/resource/039_A_P00_2710>,
+        <http://www.example.org/resource/039_A_P00_2720>,
+        <http://www.example.org/resource/039_A_P00_2730>,
+        <http://www.example.org/resource/039_A_P00_2740>,
+        <http://www.example.org/resource/039_A_P00_2750>,
+        <http://www.example.org/resource/039_A_P00_2760>,
+        <http://www.example.org/resource/039_A_P00_2770>,
+        <http://www.example.org/resource/039_A_P00_2780>,
+        <http://www.example.org/resource/039_A_P00_2790>,
+        <http://www.example.org/resource/039_A_P00_2800>,
+        <http://www.example.org/resource/039_A_P00_2810>,
+        <http://www.example.org/resource/039_A_P00_2820>,
+        <http://www.example.org/resource/039_A_P00_2830>,
+        <http://www.example.org/resource/039_A_P00_2840>,
+        <http://www.example.org/resource/039_A_P00_2850>,
+        <http://www.example.org/resource/039_A_P00_2860>,
+        <http://www.example.org/resource/039_A_P00_2870>,
+        <http://www.example.org/resource/039_A_P00_2880>,
+        <http://www.example.org/resource/039_A_P00_2890>,
+        <http://www.example.org/resource/039_A_P00_2900>,
+        <http://www.example.org/resource/039_A_P00_2910>,
+        <http://www.example.org/resource/039_A_P00_2920>,
+        <http://www.example.org/resource/039_A_P00_2930>,
+        <http://www.example.org/resource/039_A_P00_2940>,
+        <http://www.example.org/resource/039_A_P00_2950>,
+        <http://www.example.org/resource/039_A_P00_2960>,
+        <http://www.example.org/resource/039_A_P00_2970>,
+        <http://www.example.org/resource/039_A_P00_2980>,
+        <http://www.example.org/resource/039_A_P00_2990>,
+        <http://www.example.org/resource/039_A_P00_3000>,
+        <http://www.example.org/resource/039_A_P00_3010>,
+        <http://www.example.org/resource/039_A_P00_3020>,
+        <http://www.example.org/resource/039_A_P00_3030>,
+        <http://www.example.org/resource/039_A_P00_3040>,
+        <http://www.example.org/resource/039_A_P00_3050>,
+        <http://www.example.org/resource/039_A_P00_3060>,
+        <http://www.example.org/resource/039_A_P00_3070>,
+        <http://www.example.org/resource/039_A_P00_3080>,
+        <http://www.example.org/resource/039_A_P00_3090>,
+        <http://www.example.org/resource/039_A_P00_3100>,
+        <http://www.example.org/resource/039_A_P00_3110>,
+        <http://www.example.org/resource/039_A_P00_3120>,
+        <http://www.example.org/resource/039_A_P00_3130>,
+        <http://www.example.org/resource/039_A_P00_3140>,
+        <http://www.example.org/resource/039_A_P00_3150>,
+        <http://www.example.org/resource/039_A_P00_3160>,
+        <http://www.example.org/resource/039_A_P00_3170>,
+        <http://www.example.org/resource/039_A_P00_3180>,
+        <http://www.example.org/resource/039_A_P00_3190>,
+        <http://www.example.org/resource/039_A_P00_3200>,
+        <http://www.example.org/resource/039_A_P00_3210>,
+        <http://www.example.org/resource/039_A_P00_3220>,
+        <http://www.example.org/resource/039_A_P00_3230>,
+        <http://www.example.org/resource/039_A_P00_3240>,
+        <http://www.example.org/resource/039_A_P00_3250>,
+        <http://www.example.org/resource/039_A_P00_3260>,
+        <http://www.example.org/resource/039_A_P00_3270>,
+        <http://www.example.org/resource/039_A_P00_3280>,
+        <http://www.example.org/resource/039_A_P00_3290>,
+        <http://www.example.org/resource/039_A_P00_3300>,
+        <http://www.example.org/resource/039_A_P00_3310>,
+        <http://www.example.org/resource/039_A_P00_3320>,
+        <http://www.example.org/resource/039_A_P00_3330>,
+        <http://www.example.org/resource/039_A_P00_3340>,
+        <http://www.example.org/resource/039_A_P00_3350>,
+        <http://www.example.org/resource/039_A_P00_3360>,
+        <http://www.example.org/resource/039_A_P00_3370>,
+        <http://www.example.org/resource/039_A_P00_3380>,
+        <http://www.example.org/resource/039_A_P00_3390>,
+        <http://www.example.org/resource/039_A_P00_3400>,
+        <http://www.example.org/resource/039_A_P00_3410>,
+        <http://www.example.org/resource/039_A_P00_3420>,
+        <http://www.example.org/resource/039_A_P00_3430>,
+        <http://www.example.org/resource/039_A_P00_3440>,
+        <http://www.example.org/resource/039_A_P00_3450>,
+        <http://www.example.org/resource/039_A_P00_3460>,
+        <http://www.example.org/resource/039_A_P00_3470>,
+        <http://www.example.org/resource/039_A_P00_3480>,
+        <http://www.example.org/resource/039_A_P00_3490>,
+        <http://www.example.org/resource/039_A_P00_3500>,
+        <http://www.example.org/resource/039_A_P00_3510>,
+        <http://www.example.org/resource/039_A_P00_3520>,
+        <http://www.example.org/resource/039_A_P00_3530>,
+        <http://www.example.org/resource/039_A_P00_3540>,
+        <http://www.example.org/resource/039_A_P00_3550>,
+        <http://www.example.org/resource/Entrance1>,
+        <http://www.example.org/resource/Entrance2>,
+        <http://www.example.org/resource/Entrance3>,
+        <http://www.example.org/resource/Entrance4>,
+        <http://www.example.org/resource/GaetanoDonizettiStreetEntrance>,
+        <http://www.example.org/resource/GreatHallFormerForensicMedicine> .
+

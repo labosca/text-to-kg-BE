@@ -1,0 +1,187 @@
+[
+  {
+    "@id": "http://www.example.org/resource/TechnicalRoomsForSepticRoom",
+    "@type": [
+      "http://www.example.org/ontology/TechnicalRoomsForSepticRoom"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "235m2"
+      }
+    ],
+    "http://www.example.org/ontology/requiredCapacity": [
+      {
+        "@value": "300m2"
+      }
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/BasementFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/SecondFloor",
+    "https://w3id.org/rec/full/hasPart": [
+      {
+        "@id": "http://www.example.org/resource/AtticStorage"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/PaperMaterialRestorationLaboratory",
+    "@type": [
+      "http://www.example.org/ontology/PaperMaterialRestorationLaboratory"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/DigitizationAndPhotographyLaboratory",
+    "@type": [
+      "http://www.example.org/ontology/DigitizationAndPhotographyLaboratory"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/HistoricalArchive",
+    "@type": [
+      "http://www.example.org/ontology/HistoricalArchive"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "130m2"
+      }
+    ],
+    "http://www.example.org/ontology/requiredCapacity": [
+      {
+        "@value": "160m2"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Curator",
+    "https://w3id.org/rec/full/isEmployedBy": [
+      {
+        "@id": "http://www.example.org/resource/MunicipalityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/TemporaryExhibitionArea",
+    "@type": [
+      "http://www.example.org/ontology/TemporaryExhibitionArea"
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/GroundFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/StaffRestingRoom",
+    "@type": [
+      "http://www.example.org/ontology/StaffRestingRoom"
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/GroundFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/FederatedLibraryOfMedicine",
+    "@type": [
+      "http://www.example.org/ontology/FederatedLibraryOfMedicine"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "5667 books"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/PalaceOfAnatomicalInstitutes",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "039_A"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/GreatHallFormerForensicMedicine",
+    "@type": [
+      "http://www.example.org/ontology/GreatHallFormerForensicMedicine"
+    ],
+    "http://www.example.org/ontology/isCurrentlyUnserviceable": [
+      {
+        "@value": "true"
+      }
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/GroundFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/TicketOffice",
+    "@type": [
+      "http://www.example.org/ontology/TicketOffice"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "40m2"
+      }
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/GroundFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/StaffDressingRoom",
+    "@type": [
+      "http://www.example.org/ontology/StaffDressingRoom"
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/GroundFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/BasementFloor",
+    "https://w3id.org/rec/full/hasPart": [
+      {
+        "@id": "http://www.example.org/resource/TechnicalRoomsForSepticRoom"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/EducationalLaboratory",
+    "@type": [
+      "http://www.example.org/ontology/EducationalLaboratory"
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/GroundFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/OfficesForTechnicalAdministrativeAndResearchStaff",
+    "@type": [
+      "http://www.example.org/ontology/OfficesForTechnicalAdministrativeAndResearchStaff"
+    ],
+    "http://www.example.org/ontology/hosts": [
+      {
+        "@value": "15 users"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/AtticStorage",
+    "@type": [
+      "http://www.example.org/ontology/AtticStorage"
+    ]
+  }
+]

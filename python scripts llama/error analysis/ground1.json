@@ -1,0 +1,885 @@
+[
+  {
+    "@id": "http://www.example.org/resource/Researcher1",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/HistoricalArchive",
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "130m"
+      }
+    ],
+    "http://www.example.org/ontology/requiredCapacity": [
+      {
+        "@value": "160m"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#typr": [
+      {
+        "@id": "http://www.example.org/resource/ExhibitionRoom"
+      }
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/FirstFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/039_A_P01_2830",
+    "@type": [
+      "https://w3id.org/rec/full/ExhibitionRoom"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Employee2",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Intern2",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/FirstFloor",
+    "@type": [
+      "https://w3id.org/rec/full/Level"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "039_A_P01"
+      }
+    ],
+    "https://w3id.org/rec/full/area": [
+      {
+        "@value": "1645,78m2"
+      }
+    ],
+    "https://w3id.org/rec/full/hasPart": [
+      {
+        "@id": "https://w3id.org/rec/full/ExhibitionRoom"
+      },
+      {
+        "@id": "https://w3id.org/rec/full/Office"
+      },
+      {
+        "@id": "http://www.example.org/resource/FederatedLibraryOfMedicine"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2190"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2195"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2245"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2430"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_3010"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2980"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2910"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2830"
+      },
+      {
+        "@id": "http://www.example.org/resource/DigitizationAndPhotographyLaboratory"
+      },
+      {
+        "@id": "http://www.example.org/resource/HistoricalArchive"
+      },
+      {
+        "@id": "http://www.example.org/resource/OfficesForTechnicalAdministrativeAndResearchStaff"
+      },
+      {
+        "@id": "http://www.example.org/resource/PaperMaterialRestorationLaboratory"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Curator",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/MunicipalityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/039_A_P01_2195",
+    "@type": [
+      "https://w3id.org/rec/full/ExhibitionRoom"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/SecondFloor",
+    "@type": [
+      "https://w3id.org/rec/full/Level"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "039_A_P02"
+      }
+    ],
+    "https://w3id.org/rec/full/hasPart": [
+      {
+        "@id": "https://w3id.org/rec/full/Storage"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/PalaceOfAnatomicalInstitutes",
+    "@type": [
+      "https://w3id.org/rec/full/RealEstateComponent",
+      "https://w3id.org/rec/full/Building"
+    ],
+    "https://w3id.org/rec/full/address": [
+      {
+        "@id": "http://www.example.org/resource/CorsoMassimoDAzeglio"
+      },
+      {
+        "@id": "http://www.example.org/resource/ViaGaetanoDonizetti"
+      },
+      {
+        "@id": "http://www.example.org/resource/ViaMichelangeloBuonarroti"
+      },
+      {
+        "@id": "http://www.example.org/resource/ViaPietroGiuria"
+      }
+    ],
+    "https://w3id.org/rec/full/hasPart": [
+      {
+        "@id": "http://www.example.org/resource/BasementFloor"
+      },
+      {
+        "@id": "http://www.example.org/resource/GroundFloor"
+      },
+      {
+        "@id": "http://www.example.org/resource/FirstFloor"
+      },
+      {
+        "@id": "http://www.example.org/resource/SecondFloor"
+      }
+    ],
+    "https://w3id.org/rec/full/isLocationOf": [
+      {
+        "@id": "http://www.example.org/resource/SistemaMusealeDiAteneo"
+      },
+      {
+        "@id": "http://www.example.org/resource/MuseumofHumanAnatomy"
+      },
+      {
+        "@id": "http://www.example.org/resource/MuseumofCriminalAnthropology"
+      },
+      {
+        "@id": "http://www.example.org/resource/MuseumofFruits"
+      },
+      {
+        "@id": "http://www.example.org/resource/MuseumofAnthropologyandEthnography"
+      },
+      {
+        "@id": "http://www.example.org/resource/MuseumofMan"
+      }
+    ],
+    "https://w3id.org/rec/full/ownedBy": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Employee1",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Employee6",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Volunteer1",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/MuseumOfHumanAnatomy",
+    "https://w3id.org/rec/full/hasPart": [
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_3010"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2980"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2910"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2830"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/PhDStudent2",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/TicketOffice",
+    "@type": [
+      "https://w3id.org/rec/full/RetailRoom"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "20m2"
+      }
+    ],
+    "http://www.example.org/ontology/requiredCapacity": [
+      {
+        "@value": "40m2"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/MunicipalityOfTurin",
+    "@type": [
+      "https://w3id.org/rec/full/Organization"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/039_A_P01_2910",
+    "@type": [
+      "https://w3id.org/rec/full/ExhibitionRoom"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Employee5",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/PaperMaterialRestorationLaboratory",
+    "@type": [
+      "https://w3id.org/rec/full/Laboratory"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "20m2"
+      }
+    ],
+    "http://www.example.org/ontology/requiredCapacity": [
+      {
+        "@value": "40m2"
+      }
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/FirstFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/OsteologicalCollections",
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "270m2"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/MezzanineFloor",
+    "@type": [
+      "https://w3id.org/rec/full/Level"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "039_A_P00mezzanine"
+      }
+    ],
+    "https://w3id.org/rec/full/hasPart": [
+      {
+        "@id": "http://www.example.org/resource/CesareLombrosoAnatomyTheater"
+      },
+      {
+        "@id": "http://www.example.org/resource/MicroscopesClassroom"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/DirtyMaterialsStorage",
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "100m2"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/FederatedLibraryOfMedicine",
+    "@type": [
+      "https://w3id.org/rec/full/Library"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "5667books"
+      }
+    ],
+    "https://w3id.org/rec/full/hasPart": [
+      {
+        "@id": "http://www.example.org/resource/Office01"
+      },
+      {
+        "@id": "http://www.example.org/resource/Office02"
+      },
+      {
+        "@id": "http://www.example.org/resource/Office03"
+      }
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/FirstFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/MicroscopesClassroom",
+    "@type": [
+      "https://w3id.org/rec/full/Laboratory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "039_A_P00_1294"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/PhDStudent1",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/MuseumOfCriminalAnthropology",
+    "https://w3id.org/rec/full/hasPart": [
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2190"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2195"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2245"
+      },
+      {
+        "@id": "http://www.example.org/resource/039_A_P01_2430"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Employee3",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/AirConditionedRoom",
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "30m2"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/EducationalLaboratory",
+    "@type": [
+      "https://w3id.org/rec/full/Laboratory"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "30m2"
+      }
+    ],
+    "http://www.example.org/ontology/requiredCapacity": [
+      {
+        "@value": "40m2"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/CleanArtifactsStorage",
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "100m2"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/HumanEvolutionCollections",
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "100m2"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/DigitizationAndPhotographyLaboratory",
+    "@type": [
+      "https://w3id.org/rec/full/Laboratory"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "60m2"
+      }
+    ],
+    "http://www.example.org/ontology/requiredCapacity": [
+      {
+        "@value": "75m2"
+      }
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/FirstFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/GreatHallFormerlyOfLegalMedicine",
+    "@type": [
+      "https://w3id.org/rec/full/Auditorium"
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/GroundFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/039_A_P01_2245",
+    "@type": [
+      "https://w3id.org/rec/full/ExhibitionRoom"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/UniversityOfTurin",
+    "@type": [
+      "https://w3id.org/rec/full/Organization"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/StaffDressingRoom",
+    "@type": [
+      "https://w3id.org/rec/full/DressingRoom"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "20m2"
+      }
+    ],
+    "http://www.example.org/ontology/requiredCapacity": [
+      {
+        "@value": "30m2"
+      }
+    ],
+    "https://w3id.org/rec/full/adjacentElement": [
+      {
+        "@id": "http://www.example.org/resource/TicketOffice"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Volunteer2",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Intern1",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Employee4",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/GreatHallOfAnatomy",
+    "@type": [
+      "https://w3id.org/rec/full/Auditorium"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/AtticStorage",
+    "@type": [
+      "https://w3id.org/rec/full/Storage"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "300m2"
+      }
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/SecondFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/Employee7",
+    "@type": [
+      "https://w3id.org/rec/full/Person"
+    ],
+    "https://w3id.org/rec/full/isMemberOf": [
+      {
+        "@id": "http://www.example.org/resource/UniversityOfTurin"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/GroundFloor",
+    "@type": [
+      "https://w3id.org/rec/full/Level"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "039_A_P00"
+      }
+    ],
+    "https://w3id.org/rec/full/hasPart": [
+      {
+        "@id": "https://w3id.org/rec/full/EducationalRoom"
+      },
+      {
+        "@id": "https://w3id.org/rec/full/Office"
+      },
+      {
+        "@id": "http://www.example.org/resource/GreatHallOfAnatomy"
+      },
+      {
+        "@id": "http://www.example.org/resource/GreatHallFormerlyOfLegalMedicine"
+      },
+      {
+        "@id": "http://www.example.org/resource/TicketOffice"
+      },
+      {
+        "@id": "http://www.example.org/resource/StaffDressingRoom"
+      },
+      {
+        "@id": "http://www.example.org/resource/StaffRestingRoom"
+      },
+      {
+        "@id": "http://www.example.org/resource/EducationalLaboratory"
+      },
+      {
+        "@id": "http://www.example.org/resource/TemporaryExhibitionArea"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/StaffRestingRoom",
+    "@type": [
+      "https://w3id.org/rec/full/StaffRoom"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "10m2"
+      }
+    ],
+    "http://www.example.org/ontology/requiredCapacity": [
+      {
+        "@value": "20m2"
+      }
+    ],
+    "https://w3id.org/rec/full/adjacentElement": [
+      {
+        "@id": "http://www.example.org/resource/TicketOffice"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/CesareLombrosoAnatomyTheater",
+    "@type": [
+      "https://w3id.org/rec/full/Theater"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "039_A_P00_1290"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/039_A_P01_2190",
+    "@type": [
+      "https://w3id.org/rec/full/ExhibitionRoom"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/039_A_P01_2980",
+    "@type": [
+      "https://w3id.org/rec/full/ExhibitionRoom"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/TechnicalRoomSeptic",
+    "@type": [
+      "https://w3id.org/rec/full/UtilitiesRoom"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "235m2"
+      }
+    ],
+    "http://www.example.org/ontology/requiredCapacity": [
+      {
+        "@value": "300m2"
+      }
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/BasementFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/StorageFirstFloor",
+    "@type": [
+      "https://w3id.org/rec/full/Storage"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "700m2"
+      }
+    ],
+    "http://www.example.org/ontology/requiredCapacity": [
+      {
+        "@value": "1300m2"
+      }
+    ],
+    "https://w3id.org/rec/full/hasPart": [
+      {
+        "@id": "http://www.example.org/resource/AirConditionedRoom"
+      },
+      {
+        "@id": "http://www.example.org/resource/CleanArtifactsStorage"
+      },
+      {
+        "@id": "http://www.example.org/resource/OsteologicalCollections"
+      },
+      {
+        "@id": "http://www.example.org/resource/HumanEvolutionCollections"
+      },
+      {
+        "@id": "http://www.example.org/resource/DirtyMaterialsStorage"
+      },
+      {
+        "@id": "http://www.example.org/resource/MiscellaneousMaterialsStorage"
+      }
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/FirstFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/OfficesForTechnicalAdministrativeAndResearchStaff",
+    "@type": [
+      "https://w3id.org/rec/full/Office"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "15users"
+      }
+    ],
+    "https://w3id.org/rec/full/isLocationOf": [
+      {
+        "@id": "http://www.example.org/resource/Employee1"
+      },
+      {
+        "@id": "http://www.example.org/resource/Employee2"
+      },
+      {
+        "@id": "http://www.example.org/resource/Employee3"
+      },
+      {
+        "@id": "http://www.example.org/resource/Employee4"
+      },
+      {
+        "@id": "http://www.example.org/resource/Employee5"
+      },
+      {
+        "@id": "http://www.example.org/resource/Employee6"
+      },
+      {
+        "@id": "http://www.example.org/resource/Employee7"
+      },
+      {
+        "@id": "http://www.example.org/resource/Intern1"
+      },
+      {
+        "@id": "http://www.example.org/resource/Intern2"
+      },
+      {
+        "@id": "http://www.example.org/resource/PhDStudent1"
+      },
+      {
+        "@id": "http://www.example.org/resource/PhDStudent2"
+      },
+      {
+        "@id": "http://www.example.org/resource/Researcher1"
+      },
+      {
+        "@id": "http://www.example.org/resource/Volunteer1"
+      },
+      {
+        "@id": "http://www.example.org/resource/Volunteer2"
+      },
+      {
+        "@id": "http://www.example.org/resource/Curator"
+      }
+    ],
+    "https://w3id.org/rec/full/isPartOf": [
+      {
+        "@id": "http://www.example.org/resource/FirstFloor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/039_A_P01_3010",
+    "@type": [
+      "https://w3id.org/rec/full/ExhibitionRoom"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/BasementFloor",
+    "@type": [
+      "https://w3id.org/rec/full/Level"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "039_A_S01"
+      }
+    ],
+    "https://w3id.org/rec/full/hasPart": [
+      {
+        "@id": "https://w3id.org/rec/full/Storage"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/TemporaryExhibitionArea",
+    "@type": [
+      "https://w3id.org/rec/full/ExhibitionRoom"
+    ],
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "0m2"
+      }
+    ],
+    "http://www.example.org/ontology/requiredCapacity": [
+      {
+        "@value": "150m2"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/039_A_P01_2430",
+    "@type": [
+      "https://w3id.org/rec/full/ExhibitionRoom"
+    ]
+  },
+  {
+    "@id": "http://www.example.org/resource/MiscellaneousMaterialsStorage",
+    "http://www.example.org/ontology/currentCapacity": [
+      {
+        "@value": "100m2"
+      }
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+@prefix ns1: <http://www.example.org/ontology/> .
+@prefix ns2: <https://w3id.org/rec/full/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.example.org/resource/Curator> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/MunicipalityOfTurin> .
+
+<http://www.example.org/resource/Employee1> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/Employee2> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/Employee3> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/Employee4> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/Employee5> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/Employee6> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/Employee7> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/FirstFloor> a ns2:Level ;
+    ns2:hasPart <http://www.example.org/resource/039_A_P01_2190>,
+        <http://www.example.org/resource/039_A_P01_2195>,
+        <http://www.example.org/resource/039_A_P01_2245>,
+        <http://www.example.org/resource/039_A_P01_2430>,
+        <http://www.example.org/resource/039_A_P01_2830>,
+        <http://www.example.org/resource/039_A_P01_2910>,
+        <http://www.example.org/resource/039_A_P01_2980>,
+        <http://www.example.org/resource/039_A_P01_3010>,
+        <http://www.example.org/resource/DigitizationAndPhotographyLaboratory>,
+        <http://www.example.org/resource/FederatedLibraryOfMedicine>,
+        <http://www.example.org/resource/HistoricalArchive>,
+        <http://www.example.org/resource/PaperMaterialRestorationLaboratory> .
+
+<http://www.example.org/resource/Intern1> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/Intern2> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/PalaceOfAnatomicalInstitutes> a ns2:Building,
+        ns2:RealEstateComponent ;
+    ns2:address <http://www.example.org/resource/CorsoMassimoDAzeglio>,
+        <http://www.example.org/resource/ViaGaetanoDonizetti>,
+        <http://www.example.org/resource/ViaMichelangeloBuonarroti>,
+        <http://www.example.org/resource/ViaPietroGiuria> ;
+    ns2:hasPart <http://www.example.org/resource/BasementFloor>,
+        <http://www.example.org/resource/GroundFloor> ;
+    ns2:isLocationOf <http://www.example.org/resource/SistemaMusealeDiAteneo> ;
+    ns2:ownedBy <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/PhDStudent1> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/PhDStudent2> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/Researcher1> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/SecondFloor> a ns2:Level .
+
+<http://www.example.org/resource/StaffDressingRoom> ns1:currentCapacity "20m2" ;
+    ns1:requiredCapacity "30m2" .
+
+<http://www.example.org/resource/StaffRestingRoom> ns1:currentCapacity "10m2" ;
+    ns1:requiredCapacity "20m2" .
+
+<http://www.example.org/resource/TicketOffice> ns1:requiredCapacity "40m2" .
+
+<http://www.example.org/resource/Volunteer1> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/Volunteer2> a ns2:Person ;
+    ns2:isMemberOf <http://www.example.org/resource/UniversityOfTurin> .
+
+<http://www.example.org/resource/BasementFloor> a ns2:Level ;
+    rdfs:label "039_A_S01" ;
+    ns2:hasPart ns2:Storage .
+
+<http://www.example.org/resource/DigitizationAndPhotographyLaboratory> ns1:currentCapacity "60m2" ;
+    ns1:requiredCapacity "75m2" .
+
+<http://www.example.org/resource/GroundFloor> a ns2:Level ;
+    rdfs:label "039_A_P00" .
+
+<http://www.example.org/resource/HistoricalArchive> ns1:currentCapacity "130m" ;
+    ns1:requiredCapacity "160m" .
+
+<http://www.example.org/resource/PaperMaterialRestorationLaboratory> ns1:currentCapacity "20m2" ;
+    ns1:requiredCapacity "40m2" .
+
+<http://www.example.org/resource/UniversityOfTurin> a ns2:Organization .
+
